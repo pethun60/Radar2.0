@@ -73,7 +73,7 @@ def get_sensor_type(row):
         # Use the last valid value if condition is not met
         return last_valid_value2
 
-def write_influx(dframe,bucket,measure)
+def write_influx(dframe,bucket,measure):
 
 # Apply the function row by row
 record['Chiller'] = record.apply(get_chiller, axis=1)
