@@ -13,6 +13,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 global org
 
 
+
 token = "1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g=="
 org = "jci"
 url = "http://192.168.1.203:8086"
@@ -50,21 +51,31 @@ except OSError:
 filemoved=datetime.now()
 print(filemoved)
 
-if (args.f.find('*')):    
-    record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in glob.glob(args.f))
-    record = pandas.concat(record)        
-    print('merged files ')        
-    mergedfiles=datetime.now()            
-else:        
-    record = pandas.read_csv(args.f, names=['Value','Timestamp']) # Generate header   
+def create_panda(trend_file):
+    global mergedfiles
+    global search_string
+    global recordrows
+    if (args.f.find('*')):    
+        # record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in glob.glob(args.f))
+        record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in trend_file)
+        record = pandas.concat(record)        
+        print('merged files ')        
+        mergedfiles=datetime.now()            
+    else:        
+        record = pandas.read_csv(args.f, names=['Value','Timestamp']) # Generate header   
 
-recordrows=len(record.index)  #no of rows in the input file
-search_string = 'Codesys'
-input_string = "sensorname"
 
-# Remove the # in the value column
-record["Value"] = record["Value"].str.replace("#", "", regex=False)
-record["Value"] = record["Value"].replace({"#FALSE": "0","#TRUE": "1"})
+    recordrows=len(record.index)  #no of rows in the input file
+    # search_string = 'Codesys'
+    input_string = "sensorname"
+
+    # Remove the # in the value column
+    record["Value"] = record["Value"].str.replace("#", "", regex=False)
+    record["Value"] = record["Value"].replace({"#FALSE": "0","#TRUE": "1"})
+    record['Chiller'] = record.apply(get_chiller, axis=1)
+    record['Sensor'] = record.apply(get_sensor_type, axis=1)
+    filtered_record = record[~record['Value'].str.contains(search_string, na=False)]
+    return filtered_record
 
 
 # Initialize a variable to store the last valid value
@@ -73,6 +84,7 @@ last_valid_value2 = None
 # Function to determine Chiller value
 def get_chiller(row):
     global last_valid_value  # Use global or better encapsulate for cleaner design
+    global search_string
     if search_string in row['Value']:
         # Extract value when condition is met
         last_valid_value = row['Value'].split('.')[2] if len(row['Value'].split('.')) > 2 else None
@@ -126,12 +138,13 @@ def write_influx(dframe, bucket_name, measure_name):
         data_frame_tag_columns=["Chiller", "Sensor"],  # Tag column names
     )
 
+# Convert the trend file to Pandas dataframe
+search_string = "Codesys"
+mod_dataframe=create_panda(glob.glob(args.f))
+scriptchiller = datetime.now()
 
 # Apply the function row by row
-record['Chiller'] = record.apply(get_chiller, axis=1)
-scriptchiller=datetime.now()
-record['Sensor'] = record.apply(get_sensor_type, axis=1)
-filtered_record = record[~record['Value'].str.contains(search_string, na=False)]
+
 
 scriptend=datetime.now()
 
@@ -154,8 +167,7 @@ print('search and add chillers column of dataframe time. %s seconds' % chillert)
 print('search and add sensort type column of dataframe time. %s seconds' % sensort)
 print('script total execution time. %s second' % exect)
 
-print(record)
-print(filtered_record)
+print(mod_dataframe)
 
 print('data frame number of rows %s' % recordrows)
 print('move of file time. %s seconds' % movet)
@@ -163,7 +175,7 @@ print('merge to pandas dataframe of input file time. %s seconds' % merget)
 print('search and add chillers column of dataframe time. %s seconds' % chillert)
 print('search and add sensort type column of dataframe time. %s seconds' % sensort)
 print('script total execution time. %s second' % exect)
-write_influx(filtered_record,bucket,"testship")
+write_influx(mod_dataframe,bucket,"testship")
 db_write_end=datetime.now()
 totalwritetime=db_write_end-scriptend
 db_writetime=int(round(totalwritetime.total_seconds()))
