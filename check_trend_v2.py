@@ -48,6 +48,11 @@ def check_trendfiles():
     src_dir = args.d
     dest_dir = args.w
     unzipped_files = []  # List to store unzipped filenames
+    ship_names = []
+    # pattern = r"(?<=Norrkoping)(.*?)\.(gz\.txt)$"  # regular expression pattern to extract shipname
+    # pattern = r"(?<=Marine\s*Norrkoping[_\s]*)([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
+    # pattern = r"Marine\s*Norrkoping[_\s]*([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
+    pattern = r"^(?!FI_Kauhavan)[A-Za-z0-9\s]*Marine\s*Norrkoping[_\s]*([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
 
     # Remove output file if it exists
     try:
@@ -77,13 +82,24 @@ def check_trendfiles():
                 os.remove(dest_file)  # Remove the original .gz file
                 print(f"Unzipped: {unzipped_name}")
                 unzipped_files.append(unzipped_name)
+                base_file_name = os.path.basename(unzipped_name)
+                print(f"Unzipped name: {base_file_name}, type: {type(unzipped_name)}")
+                match = re.search(pattern, unzipped_name)
+                # Check if a match was found
+                if match:
+                    ship_name = match.group(1)  # Get the extracted ship name
+                    print(f"Ship name: {ship_name}")
+                    ship_names.append(ship_name)
+                else:
+                    print("No match found")
+
 
     except OSError as e:
         print(f"Error: {e}")
 
     # Record the time when files were moved
     filemoved = datetime.now()
-    return filemoved, unzipped_files
+    return filemoved, unzipped_files, ship_names
 
 def unzip_gz_file(gz_file_path, output_file_path):
     """
@@ -203,8 +219,11 @@ def write_influx(dframe, bucket_name, measure_name):
     )
 
 #  Start of the main program
-file_check_time, trend_filenames = check_trendfiles()
-print(trend_filenames)
+file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
+for file in trend_filenames:
+    print (" trend filenames" + file)
+print (" trend ship name")
+print (trend_shipnames)
 #  Convert the trend file to Pandas dataframe
 search_string = "Codesys"
 
