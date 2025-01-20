@@ -9,8 +9,10 @@ import re
 import influxdb_client, os, time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
+import gzip
 
 global org
+
 
 
 
@@ -30,26 +32,87 @@ print(starttime)
 parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
 parser.add_argument('--f', default='/home/peter/Documents/Radar2.0/trend.txt', help='Input file')
 parser.add_argument('--o', default='/home/peter/Documents/Radar2.0/trend_files/trend_output.txt', help='Output file')
+parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
+parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
 parser.add_argument('--v', action='store_true', help='Display version')
 parser.add_argument('--c', default='Influx', help='Connection name')
 args = parser.parse_args()
 
+def check_trendfiles():
+    print("Beginning processing!")
+    print(f"Input file: {args.f}")
+    print(f"Output file: {args.o}")
+    print(f"Trend directory: {args.d}")
+    print(f"Working directory: {args.w}")
 
-print('Beginning processing!')
-print(' Input file : ' + args.f)
-print(' Output file: ' + args.o)
+    src_dir = args.d
+    dest_dir = args.w
+    unzipped_files = []  # List to store unzipped filenames
 
-try:
-    os.remove(args.o)
-except OSError:
-    pass
+    # Remove output file if it exists
+    try:
+        os.remove(args.o)
+    except OSError as e:
+        print(f"Warning: {e}")
 
-try:
-    shutil.copy(args.f, '/home/peter/Documents/Radar2.0/trend_files/in_trend.txt')
-except OSError:
-    pass
-filemoved=datetime.now()
-print(filemoved)
+    try:
+        # List all files in the source directory
+        files = [f for f in os.listdir(src_dir) if os.path.isfile(os.path.join(src_dir, f))]
+        print(f"Number of files in '{src_dir}': {len(files)}")
+
+        for file_name in files:
+            src_file = os.path.join(src_dir, file_name)
+
+            # Destination file path
+            dest_file = os.path.join(dest_dir, file_name)
+
+            # Copy file to destination
+            shutil.copy(src_file, dest_file)
+            print(f"Copied: {src_file} -> {dest_file}")
+
+            # Unzip GZip files and remove the original if applicable
+            if file_name.endswith(".gz"):
+                unzipped_name = dest_file + ".txt"  # Define the name of the unzipped file
+                unzip_gz_file(dest_file, unzipped_name)  # Unzip the file
+                os.remove(dest_file)  # Remove the original .gz file
+                print(f"Unzipped: {unzipped_name}")
+                unzipped_files.append(unzipped_name)
+
+    except OSError as e:
+        print(f"Error: {e}")
+
+    # Record the time when files were moved
+    filemoved = datetime.now()
+    return filemoved, unzipped_files
+
+def unzip_gz_file(gz_file_path, output_file_path):
+    """
+    Decompresses a GZip file.
+
+    Parameters:
+        gz_file_path (str): Path to the .gz file.
+        output_file_path (str): Path to save the decompressed file.
+    """
+    try:
+        with gzip.open(gz_file_path, 'rb') as gz_file:
+            with open(output_file_path, 'wb') as out_file:
+                shutil.copyfileobj(gz_file, out_file)
+        print(f"File decompressed to '{output_file_path}'.")
+    except FileNotFoundError:
+        print(f"The file '{gz_file_path}' was not found.")
+    except OSError as e:
+        print(f"Error processing file '{gz_file_path}': {e}")
+    except EOFError as e:
+        print(f"Error end of file error '{gz_file_path}': {e}")  
+
+def remove_files_by_extension(directory, extension):
+    for filename in os.listdir(directory):
+        if filename.endswith(extension):
+            file_path = os.path.join(directory, filename)
+            os.remove(file_path)  # Remove the file
+            print(f"Removed: {file_path}")
+
+
 
 def create_panda(trend_file):
     global mergedfiles
@@ -72,6 +135,7 @@ def create_panda(trend_file):
     # Remove the # in the value column
     record["Value"] = record["Value"].str.replace("#", "", regex=False)
     record["Value"] = record["Value"].replace({"#FALSE": "0","#TRUE": "1"})
+    # Apply the function row by row
     record['Chiller'] = record.apply(get_chiller, axis=1)
     record['Sensor'] = record.apply(get_sensor_type, axis=1)
     filtered_record = record[~record['Value'].str.contains(search_string, na=False)]
@@ -138,18 +202,22 @@ def write_influx(dframe, bucket_name, measure_name):
         data_frame_tag_columns=["Chiller", "Sensor"],  # Tag column names
     )
 
-# Convert the trend file to Pandas dataframe
+#  Start of the main program
+file_check_time, trend_filenames = check_trendfiles()
+print(trend_filenames)
+#  Convert the trend file to Pandas dataframe
 search_string = "Codesys"
+
 mod_dataframe=create_panda(glob.glob(args.f))
 scriptchiller = datetime.now()
 
-# Apply the function row by row
+
 
 
 scriptend=datetime.now()
 
-movetime=filemoved-starttime
-mergedtime=mergedfiles-filemoved
+movetime=file_check_time-starttime
+mergedtime=mergedfiles-file_check_time
 chillertime=scriptchiller-mergedfiles
 sensortime=scriptend-mergedfiles
 totalscripttime=scriptend-starttime
