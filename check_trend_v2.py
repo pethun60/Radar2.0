@@ -10,10 +10,31 @@ import influxdb_client, os, time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 import gzip
+import logging
 
 global org
 
 
+# Create a logger
+logger = logging.getLogger("MyLogger")
+logger.setLevel(logging.DEBUG)  # Set the logger's overall level to the lowest level you want to capture (DEBUG)
+
+# Create a file handler to log DEBUG and above
+file_handler = logging.FileHandler("check_trend.log")
+file_handler.setLevel(logging.DEBUG)  # File captures DEBUG and above
+
+# Create a console handler to log INFO and above
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)  # Console shows INFO and above
+
+# Create a formatter for both handlers
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S")
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+# Add the handlers to the logger
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 
 token = "1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g=="
@@ -24,10 +45,13 @@ bucket = "radarbucket"
 client = InfluxDBClient(url=url, token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
+#  Use loggger to logging.info messages to log
+logging.basicConfig(level=logging.INFO)
+
 # write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
 
 starttime = datetime.now()
-print(starttime)
+logging.info(starttime)
 
 parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
 parser.add_argument('--f', default='/home/peter/Documents/Radar2.0/trend.txt', help='Input file')
@@ -39,11 +63,11 @@ parser.add_argument('--c', default='Influx', help='Connection name')
 args = parser.parse_args()
 
 def check_trendfiles():
-    print("Beginning processing!")
-    print(f"Input file: {args.f}")
-    print(f"Output file: {args.o}")
-    print(f"Trend directory: {args.d}")
-    print(f"Working directory: {args.w}")
+    logging.debug("Beginning processing!")
+    logging.debug(f"Input file: {args.f}")
+    logging.debug(f"Output file: {args.o}")
+    logging.debug(f"Trend directory: {args.d}")
+    logging.debug(f"Working directory: {args.w}")
 
     src_dir = args.d
     dest_dir = args.w
@@ -57,12 +81,12 @@ def check_trendfiles():
     try:
         os.remove(args.o)
     except OSError as e:
-        print(f"Warning: {e}")
+        logging.debug(f"Warning: {e}")
 
     try:
         # List all files in the source directory
         files = [f for f in os.listdir(src_dir) if os.path.isfile(os.path.join(src_dir, f))]
-        print(f"Number of files in '{src_dir}': {len(files)}")
+        logging.debug(f"Number of files in '{src_dir}': {len(files)}")
 
         for file_name in files:
             src_file = os.path.join(src_dir, file_name)
@@ -72,29 +96,27 @@ def check_trendfiles():
 
             # Copy file to destination
             shutil.copy(src_file, dest_file)
-            print(f"Copied: {src_file} -> {dest_file}")
-
+            logging.debug(f"Copied: {src_file} -> {dest_file}")
+            match = re.search(pattern, file_name)
             # Unzip GZip files and remove the original if applicable
-            if file_name.endswith(".gz"):
+            if match:
                 unzipped_name = dest_file + ".txt"  # Define the name of the unzipped file
                 unzip_gz_file(dest_file, unzipped_name)  # Unzip the file
                 os.remove(dest_file)  # Remove the original .gz file
-                print(f"Unzipped: {unzipped_name}")
-                unzipped_files.append(unzipped_name)
+                logging.debug(f"Unzipped: {unzipped_name}")
+                #unzipped_files.append(unzipped_name)
                 base_file_name = os.path.basename(unzipped_name)
-                print(f"Unzipped name: {base_file_name}, type: {type(unzipped_name)}")
-                match = re.search(pattern, file_name)
-                # Check if a match was found
-                if match:
-                    ship_name = next(filter(None, match.groups()))  # Get the extracted ship name
-                    print(f"Ship name: {ship_name}")
-                    ship_names.append(ship_name)
-                else:
-                    print("No match found")
+                logging.debug(f"Unzipped name: {base_file_name}, type: {type(unzipped_name)}")
+
+                ship_name = next(filter(None, match.groups()))  # Get the extracted ship name
+                logging.debug(f"Ship name: {ship_name}")
+                ship_names.append(ship_name)
+            else:
+                logging.info("No match found")
 
 
     except OSError as e:
-        print(f"Error: {e}")
+        logging.debug(f"Error: {e}")
 
     # Record the time when files were moved
     filemoved = datetime.now()
@@ -112,20 +134,20 @@ def unzip_gz_file(gz_file_path, output_file_path):
         with gzip.open(gz_file_path, 'rb') as gz_file:
             with open(output_file_path, 'wb') as out_file:
                 shutil.copyfileobj(gz_file, out_file)
-        print(f"File decompressed to '{output_file_path}'.")
+        logging.debug(f"File decompressed to '{output_file_path}'.")
     except FileNotFoundError:
-        print(f"The file '{gz_file_path}' was not found.")
+        logging.debug(f"The file '{gz_file_path}' was not found.")
     except OSError as e:
-        print(f"Error processing file '{gz_file_path}': {e}")
+        logging.debug(f"Error processing file '{gz_file_path}': {e}")
     except EOFError as e:
-        print(f"Error end of file error '{gz_file_path}': {e}")  
+        logging.debug(f"Error end of file error '{gz_file_path}': {e}")  
 
 def remove_files_by_extension(directory, extension):
     for filename in os.listdir(directory):
         if filename.endswith(extension):
             file_path = os.path.join(directory, filename)
             os.remove(file_path)  # Remove the file
-            print(f"Removed: {file_path}")
+            logging.debug(f"Removed: {file_path}")
 
 
 
@@ -137,7 +159,7 @@ def create_panda(trend_file):
         # record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in glob.glob(args.f))
         record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in trend_file)
         record = pandas.concat(record)        
-        print('merged files ')        
+        logging.debug('merged files ')        
         mergedfiles=datetime.now()            
     else:        
         record = pandas.read_csv(args.f, names=['Value','Timestamp']) # Generate header   
@@ -178,7 +200,7 @@ def get_sensor_type(row):
         match = re.search(r'\|([^|]+)\|', row['Value'])
         if match:
             last_valid_value2 = match.group(1)  # Extract matched value
-            # print(f"Extracted Sensor: {last_valid_value2}")
+            # logging.debug(f"Extracted Sensor: {last_valid_value2}")
         return last_valid_value2
     else:
         # Use the last valid value if condition is not met
@@ -218,10 +240,9 @@ def write_influx(dframe, bucket_name, measure_name):
 
 #  Start of the main program
 file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
-for file in trend_filenames:
-    print (" trend filenames" + file)
-print (" trend ship name")
-print (trend_shipnames)
+for file, shipname in zip(trend_filenames, trend_shipnames):
+    logging.info("Trend filenames: " + file + " Shipname " + shipname)
+
 #  Convert the trend file to Pandas dataframe
 # search_string = "Codesys"  # search string to catch the lines
 search_string = "LOCAL."  # search string to catch the lines
@@ -246,24 +267,24 @@ chillert=int(round(chillertime.total_seconds()))
 sensort=int(round(sensortime.total_seconds()))
 exect=int(round(totalscripttime.total_seconds()))
 
-print('data frame number of rows %s' % recordrows)
-print('move of file time. %s seconds' % movet)
-print('merge to pandas dataframe of input file time. %s seconds' % merget)
-print('search and add chillers column of dataframe time. %s seconds' % chillert)
-print('search and add sensort type column of dataframe time. %s seconds' % sensort)
-print('script total execution time. %s second' % exect)
+logging.info('data frame number of rows %s' % recordrows)
+logging.info('move of file time. %s seconds' % movet)
+logging.info('merge to pandas dataframe of input file time. %s seconds' % merget)
+logging.info('search and add chillers column of dataframe time. %s seconds' % chillert)
+logging.info('search and add sensort type column of dataframe time. %s seconds' % sensort)
+logging.info('script total execution time. %s second' % exect)
 
-print(mod_dataframe)
+logging.debug(mod_dataframe)
 
-print('data frame number of rows %s' % recordrows)
-print('move of file time. %s seconds' % movet)
-print('merge to pandas dataframe of input file time. %s seconds' % merget)
-print('search and add chillers column of dataframe time. %s seconds' % chillert)
-print('search and add sensort type column of dataframe time. %s seconds' % sensort)
-print('script total execution time. %s second' % exect)
+logging.info('data frame number of rows %s' % recordrows)
+logging.info('move of file time. %s seconds' % movet)
+logging.info('merge to pandas dataframe of input file time. %s seconds' % merget)
+logging.info('search and add chillers column of dataframe time. %s seconds' % chillert)
+logging.info('search and add sensort type column of dataframe time. %s seconds' % sensort)
+logging.info('script total execution time. %s second' % exect)
 write_influx(mod_dataframe,bucket,"testship")
 db_write_end=datetime.now()
 totalwritetime=db_write_end-scriptend
 db_writetime=int(round(totalwritetime.total_seconds()))
-print('DB write time. %s second' % db_writetime)
+logging.info('DB write time. %s second' % db_writetime)
 
