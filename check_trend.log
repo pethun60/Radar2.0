@@ -1,116 +1,116 @@
-2025-01-24 16:08:29 - INFO - 2025-01-24 16:08:29.142410
-2025-01-24 16:08:29 - INFO - Beginning processing!
-2025-01-24 16:08:29 - INFO - Input file: /home/peter/Documents/Radar2.0/trend.txt
-2025-01-24 16:08:29 - INFO - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
-2025-01-24 16:08:29 - INFO - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
-2025-01-24 16:08:29 - INFO - Working directory: /home/peter/Documents/Radar2.0/trend_files
-2025-01-24 16:08:29 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
-2025-01-24 16:08:29 - DEBUG - Number of files in '/home/peter/Documents/Radar2.0/Trend_files_zip': 20
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Regal.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Regal.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Regal
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Spirit_2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz
-2025-01-24 16:08:29 - DEBUG - Error end of file error '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz': Compressed file ended before the end-of-stream marker was reached
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Spirit_2.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Spirit_2
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Liberty.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Liberty.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Liberty
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Azura.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Azura.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Azura
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Ruby_Princess.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Ruby_Princess.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Ruby_Princess
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Miracle2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Miracle2.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Miracle2
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Sunshine.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Sunshine.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Sunshine
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Escape.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Escape.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Escape
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Breakaway.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Breakaway.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Breakaway
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND FI_Kauhavan_Lampo.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND FI_Kauhavan_Lampo.gz
-2025-01-24 16:08:29 - INFO - No match found
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Conquest.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Conquest.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Conquest
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Bliss_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Bliss_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Bliss_FC
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Emerald_P.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Emerald_P.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Emerald_P
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Encore_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Encore_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Encore_FC
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Venezia_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Venezia_AC.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Venezia_AC
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Radiance.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine Norrkoping_Radiance.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Radiance
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Nrk_Spectrum_1.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Nrk_Spectrum_1.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Spectrum_1
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Joy_FC
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Trend_Marine_Norrkoping_Bliss.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Trend_Marine_Norrkoping_Bliss.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Bliss
-2025-01-24 16:08:29 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz
-2025-01-24 16:08:29 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt'.
-2025-01-24 16:08:29 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt
-2025-01-24 16:08:29 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_AC.gz.txt, type: <class 'str'>
-2025-01-24 16:08:29 - DEBUG - Ship name: Joy_AC
-2025-01-24 16:08:29 - DEBUG - merged files 
-2025-01-24 16:08:29 - INFO - data frame number of rows 10430
-2025-01-24 16:08:29 - INFO - move of file time. 0 seconds
-2025-01-24 16:08:29 - INFO - merge to pandas dataframe of input file time. 0 seconds
-2025-01-24 16:08:29 - INFO - search and add chillers column of dataframe time. 0 seconds
-2025-01-24 16:08:29 - INFO - search and add sensort type column of dataframe time. 0 seconds
-2025-01-24 16:08:29 - INFO - script total execution time. 0 second
-2025-01-24 16:08:29 - DEBUG -       Value            Timestamp    Chiller                   Sensor
+2025-01-24 17:04:47 - INFO - 2025-01-24 17:04:47.242454
+2025-01-24 17:04:47 - INFO - Beginning processing!
+2025-01-24 17:04:47 - DEBUG - Input file: /home/peter/Documents/Radar2.0/trend.txt
+2025-01-24 17:04:47 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-24 17:04:47 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-01-24 17:04:47 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-24 17:04:47 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-24 17:04:47 - DEBUG - Number of files in '/home/peter/Documents/Radar2.0/Trend_files_zip': 20
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Regal.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Regal.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Regal
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Spirit_2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz
+2025-01-24 17:04:47 - DEBUG - Error end of file error '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz': Compressed file ended before the end-of-stream marker was reached
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Spirit_2.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Spirit_2
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Liberty.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Liberty.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Liberty
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Azura.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Azura.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Azura
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Ruby_Princess.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Ruby_Princess.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Ruby_Princess
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Miracle2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Miracle2.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Miracle2
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Sunshine.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Sunshine.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Sunshine
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Escape.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Escape.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Escape
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Breakaway.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Breakaway.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Breakaway
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND FI_Kauhavan_Lampo.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND FI_Kauhavan_Lampo.gz
+2025-01-24 17:04:47 - INFO - No match found
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Conquest.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Conquest.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Conquest
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Bliss_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Bliss_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Bliss_FC
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Emerald_P.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Emerald_P.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Emerald_P
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Encore_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Encore_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Encore_FC
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Venezia_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Venezia_AC.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Venezia_AC
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Radiance.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine Norrkoping_Radiance.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Radiance
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Nrk_Spectrum_1.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Nrk_Spectrum_1.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Spectrum_1
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Joy_FC
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Trend_Marine_Norrkoping_Bliss.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Trend_Marine_Norrkoping_Bliss.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Bliss
+2025-01-24 17:04:47 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz
+2025-01-24 17:04:47 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt'.
+2025-01-24 17:04:47 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt
+2025-01-24 17:04:47 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_AC.gz.txt, type: <class 'str'>
+2025-01-24 17:04:47 - DEBUG - Ship name: Joy_AC
+2025-01-24 17:04:47 - DEBUG - merged files 
+2025-01-24 17:04:47 - INFO - data frame number of rows 10430
+2025-01-24 17:04:47 - INFO - move of file time. 0 seconds
+2025-01-24 17:04:47 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-24 17:04:47 - INFO - search and add chillers column of dataframe time. 0 seconds
+2025-01-24 17:04:47 - INFO - search and add sensort type column of dataframe time. 0 seconds
+2025-01-24 17:04:47 - INFO - script total execution time. 0 second
+2025-01-24 17:04:47 - DEBUG -       Value            Timestamp    Chiller                   Sensor
 1       0.0  2025-01-10 01:46:27  Chiller_2  Alarm_limit_stall_count
 2       0.0  2025-01-10 02:46:27  Chiller_2  Alarm_limit_stall_count
 3       0.0  2025-01-10 03:46:27  Chiller_2  Alarm_limit_stall_count
@@ -124,126 +124,125 @@
 10429   0.0  2025-01-10 09:46:27  Chiller_3       Trafo_winding_temp
 
 [9970 rows x 4 columns]
-2025-01-24 16:08:29 - INFO - data frame number of rows 10430
-2025-01-24 16:08:29 - INFO - move of file time. 0 seconds
-2025-01-24 16:08:29 - INFO - merge to pandas dataframe of input file time. 0 seconds
-2025-01-24 16:08:29 - INFO - search and add chillers column of dataframe time. 0 seconds
-2025-01-24 16:08:29 - INFO - search and add sensort type column of dataframe time. 0 seconds
-2025-01-24 16:08:29 - INFO - script total execution time. 0 second
-2025-01-24 16:08:29 - INFO - DB write time. 0 second
-2025-01-24 16:11:20 - INFO - 2025-01-24 16:11:20.089309
-2025-01-24 16:11:20 - INFO - Beginning processing!
-2025-01-24 16:11:20 - INFO - Input file: /home/peter/Documents/Radar2.0/trend.txt
-2025-01-24 16:11:20 - INFO - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
-2025-01-24 16:11:20 - INFO - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
-2025-01-24 16:11:20 - INFO - Working directory: /home/peter/Documents/Radar2.0/trend_files
-2025-01-24 16:11:20 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
-2025-01-24 16:11:20 - DEBUG - Number of files in '/home/peter/Documents/Radar2.0/Trend_files_zip': 20
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Regal.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Regal.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Regal
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Spirit_2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz
-2025-01-24 16:11:20 - DEBUG - Error end of file error '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz': Compressed file ended before the end-of-stream marker was reached
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Spirit_2.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Spirit_2
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Liberty.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Liberty.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Liberty
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Azura.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Azura.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Azura
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Ruby_Princess.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Ruby_Princess.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Ruby_Princess
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Miracle2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Miracle2.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Miracle2
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Sunshine.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Sunshine.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Sunshine
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Escape.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Escape.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Escape
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Breakaway.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Breakaway.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Breakaway
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND FI_Kauhavan_Lampo.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND FI_Kauhavan_Lampo.gz
-2025-01-24 16:11:20 - INFO - No match found
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Conquest.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Conquest.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Conquest
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Bliss_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Bliss_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Bliss_FC
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Emerald_P.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Emerald_P.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Emerald_P
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Encore_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Encore_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Encore_FC
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Venezia_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Venezia_AC.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Venezia_AC
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Radiance.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine Norrkoping_Radiance.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Radiance
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Nrk_Spectrum_1.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Nrk_Spectrum_1.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Spectrum_1
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_FC.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Joy_FC
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Trend_Marine_Norrkoping_Bliss.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Trend_Marine_Norrkoping_Bliss.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Bliss
-2025-01-24 16:11:20 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz
-2025-01-24 16:11:20 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt'.
-2025-01-24 16:11:20 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt
-2025-01-24 16:11:20 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_AC.gz.txt, type: <class 'str'>
-2025-01-24 16:11:20 - DEBUG - Ship name: Joy_AC
-2025-01-24 16:11:20 - DEBUG - merged files 
-2025-01-24 16:11:20 - INFO - data frame number of rows 10430
-2025-01-24 16:11:20 - INFO - move of file time. 0 seconds
-2025-01-24 16:11:20 - INFO - merge to pandas dataframe of input file time. 0 seconds
-2025-01-24 16:11:20 - INFO - search and add chillers column of dataframe time. 0 seconds
-2025-01-24 16:11:20 - INFO - search and add sensort type column of dataframe time. 0 seconds
-2025-01-24 16:11:20 - INFO - script total execution time. 0 second
-2025-01-24 16:11:20 - DEBUG -       Value            Timestamp    Chiller                   Sensor
+2025-01-24 17:04:47 - INFO - data frame number of rows 10430
+2025-01-24 17:04:47 - INFO - move of file time. 0 seconds
+2025-01-24 17:04:47 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-24 17:04:47 - INFO - search and add chillers column of dataframe time. 0 seconds
+2025-01-24 17:04:47 - INFO - search and add sensort type column of dataframe time. 0 seconds
+2025-01-24 17:04:47 - INFO - script total execution time. 0 second
+2025-01-24 17:09:04 - INFO - 2025-01-24 17:09:04.096804
+2025-01-24 17:09:04 - INFO - Beginning processing!
+2025-01-24 17:09:04 - DEBUG - Input file: /home/peter/Documents/Radar2.0/trend.txt
+2025-01-24 17:09:04 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-24 17:09:04 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-01-24 17:09:04 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-24 17:09:04 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-24 17:09:04 - DEBUG - Number of files in '/home/peter/Documents/Radar2.0/Trend_files_zip': 20
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Regal.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Regal.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Regal
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Spirit_2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz
+2025-01-24 17:09:04 - DEBUG - Error end of file error '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz': Compressed file ended before the end-of-stream marker was reached
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Spirit_2.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Spirit_2
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Liberty.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Liberty.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Liberty
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Azura.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Azura.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Azura
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Ruby_Princess.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Ruby_Princess.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Ruby_Princess
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Miracle2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Miracle2.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Miracle2
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Sunshine.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Sunshine.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Sunshine
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Escape.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Escape.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Escape
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Breakaway.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Breakaway.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Breakaway
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND FI_Kauhavan_Lampo.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND FI_Kauhavan_Lampo.gz
+2025-01-24 17:09:04 - INFO - No match found
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Conquest.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Conquest.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Conquest
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Bliss_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Bliss_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Bliss_FC
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Emerald_P.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Emerald_P.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Emerald_P
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Encore_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Encore_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Encore_FC
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Venezia_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Venezia_AC.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Venezia_AC
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Radiance.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine Norrkoping_Radiance.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Radiance
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Nrk_Spectrum_1.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Nrk_Spectrum_1.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Spectrum_1
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_FC.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Joy_FC
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Trend_Marine_Norrkoping_Bliss.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Trend_Marine_Norrkoping_Bliss.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Bliss
+2025-01-24 17:09:04 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz
+2025-01-24 17:09:04 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt'.
+2025-01-24 17:09:04 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt
+2025-01-24 17:09:04 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_AC.gz.txt, type: <class 'str'>
+2025-01-24 17:09:04 - DEBUG - Ship name: Joy_AC
+2025-01-24 17:09:04 - DEBUG - merged files 
+2025-01-24 17:09:04 - INFO - data frame number of rows 10430
+2025-01-24 17:09:04 - INFO - move of file time. 0 seconds
+2025-01-24 17:09:04 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-24 17:09:04 - INFO - search and add chillers column of dataframe time. 0 seconds
+2025-01-24 17:09:04 - INFO - search and add sensort type column of dataframe time. 0 seconds
+2025-01-24 17:09:04 - INFO - script total execution time. 0 second
+2025-01-24 17:09:04 - DEBUG -       Value            Timestamp    Chiller                   Sensor
 1       0.0  2025-01-10 01:46:27  Chiller_2  Alarm_limit_stall_count
 2       0.0  2025-01-10 02:46:27  Chiller_2  Alarm_limit_stall_count
 3       0.0  2025-01-10 03:46:27  Chiller_2  Alarm_limit_stall_count
@@ -257,10 +256,10 @@
 10429   0.0  2025-01-10 09:46:27  Chiller_3       Trafo_winding_temp
 
 [9970 rows x 4 columns]
-2025-01-24 16:11:20 - INFO - data frame number of rows 10430
-2025-01-24 16:11:20 - INFO - move of file time. 0 seconds
-2025-01-24 16:11:20 - INFO - merge to pandas dataframe of input file time. 0 seconds
-2025-01-24 16:11:20 - INFO - search and add chillers column of dataframe time. 0 seconds
-2025-01-24 16:11:20 - INFO - search and add sensort type column of dataframe time. 0 seconds
-2025-01-24 16:11:20 - INFO - script total execution time. 0 second
-2025-01-24 16:11:20 - INFO - DB write time. 0 second
+2025-01-24 17:09:04 - INFO - data frame number of rows 10430
+2025-01-24 17:09:04 - INFO - move of file time. 0 seconds
+2025-01-24 17:09:04 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-24 17:09:04 - INFO - search and add chillers column of dataframe time. 0 seconds
+2025-01-24 17:09:04 - INFO - search and add sensort type column of dataframe time. 0 seconds
+2025-01-24 17:09:04 - INFO - script total execution time. 0 second
+2025-01-24 17:09:04 - INFO - DB write time. 0 second
