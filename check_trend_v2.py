@@ -50,9 +50,8 @@ def check_trendfiles():
     unzipped_files = []  # List to store unzipped filenames
     ship_names = []
     # pattern = r"(?<=Norrkoping)(.*?)\.(gz\.txt)$"  # regular expression pattern to extract shipname
-    # pattern = r"(?<=Marine\s*Norrkoping[_\s]*)([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
-    # pattern = r"Marine\s*Norrkoping[_\s]*([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
-    pattern = r"^(?!FI_Kauhavan)[A-Za-z0-9\s]*Marine\s*Norrkoping[_\s]*([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
+    # pattern = r"^(?!FI_Kauhavan)[A-Za-z0-9\s]*Marine\s*Norrkoping[_\s]*([A-Za-z0-9]+(?:[_A-Za-z0-9]+)*)\.gz\.txt$"
+    pattern = re.compile(r'(?<=Norrkoping_)(.+?)(?=\.gz$)|(?<=_Norrkoping_)(.+?)(?=\.gz$)|(?<=Marine_Nrk_)(.+?)(?=\.gz$)')
 
     # Remove output file if it exists
     try:
@@ -84,10 +83,10 @@ def check_trendfiles():
                 unzipped_files.append(unzipped_name)
                 base_file_name = os.path.basename(unzipped_name)
                 print(f"Unzipped name: {base_file_name}, type: {type(unzipped_name)}")
-                match = re.search(pattern, unzipped_name)
+                match = re.search(pattern, file_name)
                 # Check if a match was found
                 if match:
-                    ship_name = match.group(1)  # Get the extracted ship name
+                    ship_name = next(filter(None, match.groups()))  # Get the extracted ship name
                     print(f"Ship name: {ship_name}")
                     ship_names.append(ship_name)
                 else:
@@ -145,7 +144,6 @@ def create_panda(trend_file):
 
 
     recordrows=len(record.index)  #no of rows in the input file
-    # search_string = 'Codesys'
     input_string = "sensorname"
 
     # Remove the # in the value column
@@ -225,7 +223,8 @@ for file in trend_filenames:
 print (" trend ship name")
 print (trend_shipnames)
 #  Convert the trend file to Pandas dataframe
-search_string = "Codesys"
+# search_string = "Codesys"  # search string to catch the lines
+search_string = "LOCAL."  # search string to catch the lines
 
 mod_dataframe=create_panda(glob.glob(args.f))
 scriptchiller = datetime.now()
