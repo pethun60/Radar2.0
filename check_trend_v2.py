@@ -295,10 +295,6 @@ scriptend=datetime.now()
 
 
 
-
-
-
-
 scriptchiller=datetime.now()
 movetime=file_check_time-starttime
 mergedtime=mergedfiles-file_check_time
