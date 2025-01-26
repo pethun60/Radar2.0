@@ -29,7 +29,7 @@ file_handler.setLevel(logging.DEBUG)
 
 # Create a console handler (use stdout to prevent it from using stderr)
 console_handler = logging.StreamHandler(sys.stdout)  # Ensure logging goes to stdout
-console_handler.setLevel(logging.INFO)  # Show only INFO and above on console
+console_handler.setLevel(logging.WARNING)  # Show only INFO and above on console
 
 # Create a formatter
 formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S")
@@ -160,27 +160,40 @@ def create_panda(trend_file):
     global mergedfiles
     global search_string
     global recordrows
-    if (file.find('*')):    
-        # record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in glob.glob(args.f))
-        record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in trend_file)
-        record = pandas.concat(record)        
-        logger.debug('merged files ')        
-        mergedfiles=datetime.now()            
-    else:        
-        record = pandas.read_csv(file, names=['Value','Timestamp']) # Generate header   
+    
+    try:
+        if trend_file and isinstance(trend_file, list):
+            # Check if the files in trend_file exist and are not empty
+            valid_files = [file for file in trend_file if os.path.isfile(file) and os.path.getsize(file) > 0]
+            
+            if valid_files:
+                record = (pandas.read_csv(file, names=['Value', 'Timestamp']) for file in valid_files)
+                record = pandas.concat(record)        
+                logger.debug('merged files')        
+                mergedfiles = datetime.now()
+            else:
+                logger.warning('No valid files to process.')
+        else:
+            # Single file processing for file
+            if os.path.isfile(file) and os.path.getsize(file) > 0:
+                record = pandas.read_csv(file, names=['Value', 'Timestamp'])  # Generate header
+            else:
+                logger.warning(f"File '{file}' is empty or does not exist.")
+        recordrows=len(record.index)  #no of rows in the input file
+        input_string = "sensorname"
+
+        # Remove the # in the value column
+        record["Value"] = record["Value"].str.replace("#", "", regex=False)
+        record["Value"] = record["Value"].replace({"#FALSE": "0","#TRUE": "1"})
+        # Apply the function row by row
+        record['Chiller'] = record.apply(get_chiller, axis=1)
+        record['Sensor'] = record.apply(get_sensor_type, axis=1)
+        filtered_record = record[~record['Value'].str.contains(search_string, na=False)]
+        return filtered_record        
+    except Exception as e:
+        logger.error(f"An error occurred while processing files: {e}")
 
 
-    recordrows=len(record.index)  #no of rows in the input file
-    input_string = "sensorname"
-
-    # Remove the # in the value column
-    record["Value"] = record["Value"].str.replace("#", "", regex=False)
-    record["Value"] = record["Value"].replace({"#FALSE": "0","#TRUE": "1"})
-    # Apply the function row by row
-    record['Chiller'] = record.apply(get_chiller, axis=1)
-    record['Sensor'] = record.apply(get_sensor_type, axis=1)
-    filtered_record = record[~record['Value'].str.contains(search_string, na=False)]
-    return filtered_record
 
 
 # Initialize a variable to store the last valid value
@@ -214,6 +227,16 @@ def get_sensor_type(row):
 def write_influx(dframe, bucket_name, measure_name):
     import pandas as pd
 
+    # Check if the DataFrame is None
+    if dframe is None:
+        logger.debug("DataFrame is None. Skipping InfluxDB insertion.")
+        return  # Exit the function early
+
+    # Check if the DataFrame is empty
+    if dframe.empty:
+        logger.debug("DataFrame is empty. Skipping InfluxDB insertion.")
+        return  # Exit the function early
+
     # Ensure we are working on a copy
     dframe = dframe.copy()
 
@@ -235,13 +258,18 @@ def write_influx(dframe, bucket_name, measure_name):
         raise ValueError(f"Missing required tag columns: {missing_columns}")
 
     # Write the DataFrame to InfluxDB
-    write_api.write(
-        bucket=bucket_name,
-        org=org,
-        record=dframe,
-        data_frame_measurement_name=measure_name,
-        data_frame_tag_columns=["Chiller", "Sensor"],  # Tag column names
-    )
+    try:
+        write_api.write(
+            bucket=bucket_name,
+            org=org,
+            record=dframe,
+            data_frame_measurement_name=measure_name,
+            data_frame_tag_columns=["Chiller", "Sensor"],  # Tag column names
+        )
+    except Exception as e:
+        logger.error(f"Failed to write data to InfluxDB: {e}")
+        raise RuntimeError(f"Failed to write data to InfluxDB: {e}")
+        
 
 #  Start of the main program
 file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
@@ -255,7 +283,13 @@ for file, shipname in zip(trend_filenames, trend_shipnames):
     mod_dataframe=create_panda(glob.glob(file))
     logger.debug('mod_dataframe' )
     logger.debug(mod_dataframe )
-    #  Convert the trend file to Pandas dataframe
+    #  write dataframe with shipnameto influxdb
+    logger.debug('data frame number of rows %s' % recordrows)
+    write_influx(mod_dataframe,bucket,shipname)
+    logger.debug('ship data  writtten to influxdb %s' % shipname)
+
+
+
 scriptend=datetime.now()
 
 
@@ -278,25 +312,17 @@ chillert=int(round(chillertime.total_seconds()))
 sensort=int(round(sensortime.total_seconds()))
 exect=int(round(totalscripttime.total_seconds()))
 
-logger.info('data frame number of rows %s' % recordrows)
+
+
 logger.info('move of file time. %s seconds' % movet)
 logger.info('merge to pandas dataframe of input file time. %s seconds' % merget)
-logger.info('search and add chillers column of dataframe time. %s seconds' % chillert)
-logger.info('search and add sensort type column of dataframe time. %s seconds' % sensort)
-logger.info('script total execution time. %s second' % exect)
-
-logger.debug(mod_dataframe)
-
-logger.info('data frame number of rows %s' % recordrows)
-logger.info('move of file time. %s seconds' % movet)
-logger.info('merge to pandas dataframe of input file time. %s seconds' % merget)
-logger.info('search and add chillers column of dataframe time. %s seconds' % chillert)
-logger.info('search and add sensort type column of dataframe time. %s seconds' % sensort)
+logger.debug('search and add chillers column of dataframe time. %s seconds' % chillert)
+logger.debug('search and add sensort type column of dataframe time. %s seconds' % sensort)
 logger.info('script total execution time. %s second' % exect)
 
 db_write_end=datetime.now()
 totalwritetime=db_write_end-scriptend
-write_influx(mod_dataframe,bucket,shipname)
+
 db_writetime=int(round(totalwritetime.total_seconds()))
 logger.info('DB write time. %s second' % db_writetime)
 
