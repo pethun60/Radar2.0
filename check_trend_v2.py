@@ -53,9 +53,7 @@ write_api = client.write_api(write_options=SYNCHRONOUS)
 # logger.basicConfig(level=logging.INFO)
 
 # write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
-
-print(logging.getLogger().handlers)  # Lists all handlers for the root logger
-print(logger.handlers)  
+ 
 
 starttime = datetime.now()
 logger.info(starttime)
@@ -111,12 +109,12 @@ def check_trendfiles():
                 unzip_gz_file(dest_file, unzipped_name)  # Unzip the file
                 os.remove(dest_file)  # Remove the original .gz file
                 logger.debug(f"Unzipped: {unzipped_name}")
-                #unzipped_files.append(unzipped_name)
+                unzipped_files.append(unzipped_name)
                 base_file_name = os.path.basename(unzipped_name)
                 logger.debug(f"Unzipped name: {base_file_name}, type: {type(unzipped_name)}")
 
                 ship_name = next(filter(None, match.groups()))  # Get the extracted ship name
-                logger.debug(f"Ship name: {ship_name}")
+                logger.debug(f"Ship name in check_trendfiles: {ship_name}")
                 ship_names.append(ship_name)
             else:
                 logger.info("No match found")
@@ -162,14 +160,14 @@ def create_panda(trend_file):
     global mergedfiles
     global search_string
     global recordrows
-    if (args.f.find('*')):    
+    if (file.find('*')):    
         # record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in glob.glob(args.f))
         record = (pandas.read_csv(file, names=['Value','Timestamp']) for file in trend_file)
         record = pandas.concat(record)        
         logger.debug('merged files ')        
         mergedfiles=datetime.now()            
     else:        
-        record = pandas.read_csv(args.f, names=['Value','Timestamp']) # Generate header   
+        record = pandas.read_csv(file, names=['Value','Timestamp']) # Generate header   
 
 
     recordrows=len(record.index)  #no of rows in the input file
@@ -247,21 +245,27 @@ def write_influx(dframe, bucket_name, measure_name):
 
 #  Start of the main program
 file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
+
+
 for file, shipname in zip(trend_filenames, trend_shipnames):
-    logger.info("Trend filenames: " + file + " Shipname " + shipname)
-
-#  Convert the trend file to Pandas dataframe
-# search_string = "Codesys"  # search string to catch the lines
-search_string = "LOCAL."  # search string to catch the lines
-
-mod_dataframe=create_panda(glob.glob(args.f))
-scriptchiller = datetime.now()
-
-
-
-
+    logger.debug('filename '+ file + ' ship name '+ shipname )
+    #  Convert the trend file to Pandas dataframe
+    # search_string = "Codesys"  # search string to catch the lines
+    search_string = "LOCAL."  # search string to catch the lines
+    mod_dataframe=create_panda(glob.glob(file))
+    logger.debug('mod_dataframe' )
+    logger.debug(mod_dataframe )
+    #  Convert the trend file to Pandas dataframe
 scriptend=datetime.now()
 
+
+
+
+
+
+
+
+scriptchiller=datetime.now()
 movetime=file_check_time-starttime
 mergedtime=mergedfiles-file_check_time
 chillertime=scriptchiller-mergedfiles
@@ -289,9 +293,10 @@ logger.info('merge to pandas dataframe of input file time. %s seconds' % merget)
 logger.info('search and add chillers column of dataframe time. %s seconds' % chillert)
 logger.info('search and add sensort type column of dataframe time. %s seconds' % sensort)
 logger.info('script total execution time. %s second' % exect)
-write_influx(mod_dataframe,bucket,"testship")
+
 db_write_end=datetime.now()
 totalwritetime=db_write_end-scriptend
+write_influx(mod_dataframe,bucket,shipname)
 db_writetime=int(round(totalwritetime.total_seconds()))
 logger.info('DB write time. %s second' % db_writetime)
 
