@@ -56,11 +56,12 @@ write_api = client.write_api(write_options=SYNCHRONOUS)
  
 
 starttime = datetime.now()
+mergedfiles = datetime.now()
 logger.info(starttime)
 search_string = "LOCAL."  # search string to catch the lines
 
 parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
-parser.add_argument('--f', default='/home/peter/Documents/Radar2.0/trend.txt', help='Input file')
+parser.add_argument('--t', default=30, help='script delaytime')
 parser.add_argument('--o', default='/home/peter/Documents/Radar2.0/trend_files/trend_output.txt', help='Output file')
 parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
 parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
@@ -70,7 +71,7 @@ args = parser.parse_args()
 
 def check_trendfiles():
     logger.info("Beginning processing!")
-    logger.debug(f"Input file: {args.f}")
+    logger.debug(f"script delay time: {args.t}")
     logger.debug(f"Output file: {args.o}")
     logger.debug(f"Trend directory: {args.d}")
     logger.debug(f"Working directory: {args.w}")
@@ -325,7 +326,7 @@ def main():
         db_writetime=int(round(totalwritetime.total_seconds()))
         logger.info('DB write time. %s second' % db_writetime)
           
-        logger.info("Sleeping for 30 minutes...")
-        time.sleep(1800)  # Sleep for 30 minutes
+        logger.info("Sleeping for " + args.t + " seconds")
+        time.sleep(int(args.t))  # Sleep for 30 minutes
 if __name__ == "__main__":
     main()

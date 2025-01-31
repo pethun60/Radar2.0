@@ -1549,3 +1549,594 @@
 2025-01-31 12:54:13 - INFO - script total execution time. 7 second
 2025-01-31 12:54:13 - INFO - DB write time. 0 second
 2025-01-31 12:54:13 - INFO - Sleeping for 30 minutes...
+2025-01-31 13:04:42 - INFO - 2025-01-31 13:04:42.669455
+2025-01-31 13:04:42 - INFO - Beginning processing!
+2025-01-31 13:05:48 - INFO - 2025-01-31 13:05:48.947914
+2025-01-31 13:05:48 - INFO - Beginning processing!
+2025-01-31 13:05:48 - DEBUG - script delay time: 30
+2025-01-31 13:05:48 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:05:48 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-01-31 13:05:48 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:05:48 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:05:48 - DEBUG - Number of files in '/home/peter/Documents/Radar2.0/Trend_files_zip': 20
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Regal.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Regal.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Regal
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Spirit_2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz
+2025-01-31 13:05:48 - DEBUG - Error end of file error '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz': Compressed file ended before the end-of-stream marker was reached
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Spirit_2.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Spirit_2
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Liberty.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Liberty.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Liberty
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Azura.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Azura.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Azura
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Ruby_Princess.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Ruby_Princess.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Ruby_Princess
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Miracle2.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Miracle2.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Miracle2
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Sunshine.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Sunshine.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Sunshine
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Escape.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Escape.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Escape
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Breakaway.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Breakaway.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Breakaway
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND FI_Kauhavan_Lampo.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND FI_Kauhavan_Lampo.gz
+2025-01-31 13:05:48 - INFO - No match found
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Conquest.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Conquest.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Conquest
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Bliss_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Bliss_FC.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Bliss_FC
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Emerald_P.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Emerald_P.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Emerald_P
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Encore_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Encore_FC.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Encore_FC
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Venezia_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Venezia_AC.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Venezia_AC
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine Norrkoping_Radiance.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine Norrkoping_Radiance.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Radiance
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Nrk_Spectrum_1.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Nrk_Spectrum_1.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Spectrum_1
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_FC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_FC.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Joy_FC
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Trend_Marine_Norrkoping_Bliss.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Trend_Marine_Norrkoping_Bliss.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Bliss
+2025-01-31 13:05:48 - DEBUG - Copied: /home/peter/Documents/Radar2.0/Trend_files_zip/TREND Marine_Norrkoping_Joy_AC.gz -> /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz
+2025-01-31 13:05:48 - DEBUG - File decompressed to '/home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt'.
+2025-01-31 13:05:48 - DEBUG - Unzipped: /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt
+2025-01-31 13:05:48 - DEBUG - Unzipped name: TREND Marine_Norrkoping_Joy_AC.gz.txt, type: <class 'str'>
+2025-01-31 13:05:48 - DEBUG - Ship name in check_trendfiles: Joy_AC
+2025-01-31 13:05:48 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Regal.gz.txt ship name Regal
+2025-01-31 13:05:48 - DEBUG - merged files
+2025-01-31 13:05:49 - DEBUG - mod_dataframe
+2025-01-31 13:05:49 - DEBUG -         Value            Timestamp   Chiller Sensor
+1      2025.0  2025-01-16 23:37:06  Calculus      5
+2      2025.0  2025-01-16 23:39:06  Calculus      5
+3      2025.0  2025-01-16 23:41:06  Calculus      5
+4      2025.0  2025-01-16 23:43:06  Calculus      5
+5      2025.0  2025-01-16 23:45:06  Calculus      5
+...       ...                  ...       ...    ...
+15359  1119.0  2025-01-17 00:29:03  Sequence    120
+15360  1119.0  2025-01-17 00:31:03  Sequence    120
+15361  1119.0  2025-01-17 00:33:03  Sequence    120
+15362  1119.0  2025-01-17 00:35:03  Sequence    120
+15363  1119.0  2025-01-17 00:37:03  Sequence    120
+
+[14880 rows x 4 columns]
+2025-01-31 13:05:49 - DEBUG - data frame number of rows 15364
+2025-01-31 13:05:49 - DEBUG - ship data  writtten to influxdb Regal
+2025-01-31 13:05:49 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Spirit_2.gz.txt ship name Spirit_2
+2025-01-31 13:05:49 - WARNING - No valid files to process.
+2025-01-31 13:05:49 - ERROR - An error occurred while processing files: cannot access local variable 'record' where it is not associated with a value
+2025-01-31 13:05:49 - DEBUG - mod_dataframe
+2025-01-31 13:05:49 - DEBUG - None
+2025-01-31 13:05:49 - DEBUG - data frame number of rows 15364
+2025-01-31 13:05:49 - DEBUG - DataFrame is None. Skipping InfluxDB insertion.
+2025-01-31 13:05:49 - DEBUG - ship data  writtten to influxdb Spirit_2
+2025-01-31 13:05:49 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Liberty.gz.txt ship name Liberty
+2025-01-31 13:05:49 - DEBUG - merged files
+2025-01-31 13:05:49 - DEBUG - mod_dataframe
+2025-01-31 13:05:49 - DEBUG -          Value            Timestamp    Chiller Sensor
+1     2.526971  2025-01-16 01:28:35  Chiller_1    120
+2     2.870299  2025-01-16 01:30:37  Chiller_1    120
+3     2.783323  2025-01-16 01:32:38  Chiller_1    120
+4     2.581903  2025-01-16 01:34:41  Chiller_1    120
+5     3.039674  2025-01-16 01:36:43  Chiller_1    120
+...        ...                  ...        ...    ...
+2932       nan  2025-01-16 02:19:45   Calculus    120
+2933       nan  2025-01-16 02:21:45   Calculus    120
+2934       nan  2025-01-16 02:23:45   Calculus    120
+2935       nan  2025-01-16 02:25:45   Calculus    120
+2936       nan  2025-01-16 02:27:45   Calculus    120
+
+[2839 rows x 4 columns]
+2025-01-31 13:05:49 - DEBUG - data frame number of rows 2937
+2025-01-31 13:05:49 - DEBUG - ship data  writtten to influxdb Liberty
+2025-01-31 13:05:49 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Azura.gz.txt ship name Azura
+2025-01-31 13:05:49 - DEBUG - merged files
+2025-01-31 13:05:49 - DEBUG - mod_dataframe
+2025-01-31 13:05:49 - DEBUG -        Value            Timestamp        Chiller Sensor
+1      106.0  2025-01-16 07:56:05  Chiller_1_int    120
+2      106.0  2025-01-16 07:58:05  Chiller_1_int    120
+3      106.0  2025-01-16 08:00:05  Chiller_1_int    120
+4      106.0  2025-01-16 08:02:05  Chiller_1_int    120
+5      106.0  2025-01-16 08:04:05  Chiller_1_int    120
+...      ...                  ...            ...    ...
+10126    0.0  2025-01-16 08:50:02       Calculus    120
+10127    0.0  2025-01-16 08:52:07       Calculus    120
+10128    0.0  2025-01-16 08:54:07       Calculus    120
+10129    0.0  2025-01-16 08:56:07       Calculus    120
+10130    0.0  2025-01-16 08:58:07       Calculus    120
+
+[9824 rows x 4 columns]
+2025-01-31 13:05:49 - DEBUG - data frame number of rows 10131
+2025-01-31 13:05:49 - DEBUG - ship data  writtten to influxdb Azura
+2025-01-31 13:05:49 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Ruby_Princess.gz.txt ship name Ruby_Princess
+2025-01-31 13:05:49 - DEBUG - merged files
+2025-01-31 13:05:49 - DEBUG - mod_dataframe
+2025-01-31 13:05:49 - DEBUG -       Value            Timestamp    Chiller               Sensor
+1      57.0  2025-01-16 04:33:32  Chiller_2     SP_MC_controller
+2       0.0  2025-01-16 04:33:34  Chiller_2     SP_MC_controller
+3      57.0  2025-01-16 04:33:40  Chiller_2     SP_MC_controller
+4       0.0  2025-01-16 04:33:42  Chiller_2     SP_MC_controller
+5      57.0  2025-01-16 04:33:48  Chiller_2     SP_MC_controller
+...     ...                  ...        ...                  ...
+14437  30.0  2025-01-16 05:34:59  Chiller_3  Unit_control_signal
+14438  30.0  2025-01-16 06:34:59  Chiller_3  Unit_control_signal
+14440   0.0  2025-01-16 04:34:59  Chiller_3           VGD_output
+14441   0.0  2025-01-16 05:34:59  Chiller_3           VGD_output
+14442   0.0  2025-01-16 06:34:59  Chiller_3           VGD_output
+
+[13983 rows x 4 columns]
+2025-01-31 13:05:49 - DEBUG - data frame number of rows 14443
+2025-01-31 13:05:50 - DEBUG - ship data  writtten to influxdb Ruby_Princess
+2025-01-31 13:05:50 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Miracle2.gz.txt ship name Miracle2
+2025-01-31 13:05:50 - DEBUG - merged files
+2025-01-31 13:05:50 - DEBUG - mod_dataframe
+2025-01-31 13:05:50 - DEBUG -        Value            Timestamp       Chiller Sensor
+1       -0.0  2025-01-16 06:36:04      Calculus    120
+2       -0.0  2025-01-16 06:38:04      Calculus    120
+3       -0.0  2025-01-16 06:40:04      Calculus    120
+4       -0.0  2025-01-16 06:42:04      Calculus    120
+5       -0.0  2025-01-16 06:44:04      Calculus    120
+...      ...                  ...           ...    ...
+2200  8765.0  2025-01-16 07:25:43  BR_Chiller_2    120
+2201  8765.0  2025-01-16 07:27:43  BR_Chiller_2    120
+2202  8765.0  2025-01-16 07:29:43  BR_Chiller_2    120
+2203  8765.0  2025-01-16 07:31:43  BR_Chiller_2    120
+2204  8765.0  2025-01-16 07:33:43  BR_Chiller_2    120
+
+[2132 rows x 4 columns]
+2025-01-31 13:05:50 - DEBUG - data frame number of rows 2205
+2025-01-31 13:05:50 - DEBUG - ship data  writtten to influxdb Miracle2
+2025-01-31 13:05:50 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Sunshine.gz.txt ship name Sunshine
+2025-01-31 13:05:50 - DEBUG - merged files
+2025-01-31 13:05:50 - DEBUG - mod_dataframe
+2025-01-31 13:05:50 - DEBUG -      Value            Timestamp   Chiller Sensor
+1      0.0  2025-01-16 09:34:03  Calculus    120
+2      0.0  2025-01-16 09:36:03  Calculus    120
+3      0.0  2025-01-16 09:38:03  Calculus    120
+4      0.0  2025-01-16 09:40:03  Calculus    120
+5      0.0  2025-01-16 09:42:03  Calculus    120
+...    ...                  ...       ...    ...
+7147   1.0  2025-01-16 10:26:05  Sequence    120
+7148   1.0  2025-01-16 10:28:05  Sequence    120
+7149   1.0  2025-01-16 10:30:05  Sequence    120
+7150   1.0  2025-01-16 10:32:05  Sequence    120
+7151   1.0  2025-01-16 10:34:05  Sequence    120
+
+[6918 rows x 4 columns]
+2025-01-31 13:05:50 - DEBUG - data frame number of rows 7152
+2025-01-31 13:05:50 - DEBUG - ship data  writtten to influxdb Sunshine
+2025-01-31 13:05:50 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Escape.gz.txt ship name Escape
+2025-01-31 13:05:50 - DEBUG - merged files
+2025-01-31 13:05:50 - DEBUG - mod_dataframe
+2025-01-31 13:05:50 - DEBUG -        Value            Timestamp    Chiller                   Sensor
+1      675.0  2025-01-16 02:36:23   Sequence            P1_motor_1_kW
+2      702.0  2025-01-16 02:47:07   Sequence            P1_motor_1_kW
+3      681.0  2025-01-16 02:47:43   Sequence            P1_motor_1_kW
+4      669.0  2025-01-16 03:11:41   Sequence            P1_motor_1_kW
+5      703.0  2025-01-16 03:14:17   Sequence            P1_motor_1_kW
+...      ...                  ...        ...                      ...
+13589    0.5  2025-01-16 06:12:15  Chiller_1                Theta_out
+13591   57.6  2025-01-16 05:12:15  Chiller_1  Thrust_bearing_position
+13592   57.6  2025-01-16 06:12:15  Chiller_1  Thrust_bearing_position
+13594    0.0  2025-01-16 05:12:15  Chiller_1       Trafo_winding_temp
+13595    0.0  2025-01-16 06:12:15  Chiller_1       Trafo_winding_temp
+
+[13087 rows x 4 columns]
+2025-01-31 13:05:50 - DEBUG - data frame number of rows 13596
+2025-01-31 13:05:50 - DEBUG - ship data  writtten to influxdb Escape
+2025-01-31 13:05:50 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Breakaway.gz.txt ship name Breakaway
+2025-01-31 13:05:50 - DEBUG - merged files
+2025-01-31 13:05:50 - DEBUG - mod_dataframe
+2025-01-31 13:05:50 - DEBUG -        Value            Timestamp    Chiller               Sensor
+1       7.27  2025-01-16 02:55:44   Sequence         COP_ch_4_mec
+2       6.86  2025-01-16 02:56:24   Sequence         COP_ch_4_mec
+3       7.27  2025-01-16 02:57:22   Sequence         COP_ch_4_mec
+4       6.83  2025-01-16 02:57:44   Sequence         COP_ch_4_mec
+5       7.39  2025-01-16 02:58:12   Sequence         COP_ch_4_mec
+...      ...                  ...        ...                  ...
+14224    0.0  2025-01-16 04:25:56  Chiller_1   Trafo_winding_temp
+14226   37.6  2025-01-16 03:25:56  Chiller_1  Unit_control_signal
+14227   37.8  2025-01-16 04:25:56  Chiller_1  Unit_control_signal
+14229  100.0  2025-01-16 03:25:56  Chiller_1           VGD_output
+14230  100.0  2025-01-16 04:25:56  Chiller_1           VGD_output
+
+[13639 rows x 4 columns]
+2025-01-31 13:05:50 - DEBUG - data frame number of rows 14231
+2025-01-31 13:05:51 - DEBUG - ship data  writtten to influxdb Breakaway
+2025-01-31 13:05:51 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Conquest.gz.txt ship name Conquest
+2025-01-31 13:05:51 - DEBUG - merged files
+2025-01-31 13:05:51 - DEBUG - mod_dataframe
+2025-01-31 13:05:51 - DEBUG -       Value            Timestamp   Chiller Sensor
+1     484.0  2025-03-09 22:54:31  Calculus    120
+2     485.0  2025-03-09 22:56:31  Calculus    120
+3     478.0  2025-03-09 22:58:31  Calculus    120
+4     476.0  2025-03-09 23:00:31  Calculus    120
+5     481.0  2025-03-09 23:02:31  Calculus    120
+...     ...                  ...       ...    ...
+9672    1.0  2025-03-09 23:46:30  Sequence    120
+9673   -4.0  2025-03-09 23:48:30  Sequence    120
+9674   -1.0  2025-03-09 23:50:31  Sequence    120
+9675   -2.0  2025-03-09 23:52:31  Sequence    120
+9676    0.0  2025-03-09 23:54:31  Sequence    120
+
+[9361 rows x 4 columns]
+2025-01-31 13:05:51 - DEBUG - data frame number of rows 9677
+2025-01-31 13:05:51 - DEBUG - ship data  writtten to influxdb Conquest
+2025-01-31 13:05:51 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Bliss_FC.gz.txt ship name Bliss_FC
+2025-01-31 13:05:51 - DEBUG - merged files
+2025-01-31 13:05:51 - DEBUG - mod_dataframe
+2025-01-31 13:05:51 - DEBUG -       Value            Timestamp    Chiller                   Sensor
+1       0.0  2022-12-18 10:11:57  Chiller_3  Alarm_limit_stall_count
+2       0.0  2022-12-18 11:11:57  Chiller_3  Alarm_limit_stall_count
+3       0.0  2022-12-18 12:11:57  Chiller_3  Alarm_limit_stall_count
+4       0.0  2022-12-18 13:11:57  Chiller_3  Alarm_limit_stall_count
+5       0.0  2022-12-18 14:11:57  Chiller_3  Alarm_limit_stall_count
+...     ...                  ...        ...                      ...
+20593   0.0  2022-12-19 05:11:59  Chiller_4               VGD_output
+20594   0.0  2022-12-19 06:11:59  Chiller_4               VGD_output
+20595   0.0  2022-12-19 07:11:59  Chiller_4               VGD_output
+20596   0.0  2022-12-19 08:11:59  Chiller_4               VGD_output
+20597   0.0  2022-12-19 09:11:59  Chiller_4               VGD_output
+
+[20024 rows x 4 columns]
+2025-01-31 13:05:51 - DEBUG - data frame number of rows 20598
+2025-01-31 13:05:51 - DEBUG - ship data  writtten to influxdb Bliss_FC
+2025-01-31 13:05:51 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Emerald_P.gz.txt ship name Emerald_P
+2025-01-31 13:05:51 - DEBUG - merged files
+2025-01-31 13:05:51 - DEBUG - mod_dataframe
+2025-01-31 13:05:51 - DEBUG -        Value            Timestamp   Chiller Sensor
+1     2025.0  2025-01-17 01:48:13  Calculus      5
+2     2025.0  2025-01-17 01:50:13  Calculus      5
+3     2025.0  2025-01-17 01:52:13  Calculus      5
+4     2025.0  2025-01-17 01:54:13  Calculus      5
+5     2025.0  2025-01-17 01:56:13  Calculus      5
+...      ...                  ...       ...    ...
+8822     0.0  2025-01-17 02:40:41  Sequence    120
+8823     0.0  2025-01-17 02:42:41  Sequence    120
+8824     0.0  2025-01-17 02:44:41  Sequence    120
+8825     0.0  2025-01-17 02:46:41  Sequence    120
+8826     0.0  2025-01-17 02:48:41  Sequence    120
+
+[8547 rows x 4 columns]
+2025-01-31 13:05:51 - DEBUG - data frame number of rows 8827
+2025-01-31 13:05:52 - DEBUG - ship data  writtten to influxdb Emerald_P
+2025-01-31 13:05:52 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Encore_FC.gz.txt ship name Encore_FC
+2025-01-31 13:05:52 - DEBUG - merged files
+2025-01-31 13:05:52 - DEBUG - mod_dataframe
+2025-01-31 13:05:52 - DEBUG -       Value            Timestamp    Chiller                   Sensor
+1       0.0  2022-12-18 10:11:57  Chiller_3  Alarm_limit_stall_count
+2       0.0  2022-12-18 11:11:57  Chiller_3  Alarm_limit_stall_count
+3       0.0  2022-12-18 12:11:57  Chiller_3  Alarm_limit_stall_count
+4       0.0  2022-12-18 13:11:57  Chiller_3  Alarm_limit_stall_count
+5       0.0  2022-12-18 14:11:57  Chiller_3  Alarm_limit_stall_count
+...     ...                  ...        ...                      ...
+20593   0.0  2022-12-19 05:11:59  Chiller_4               VGD_output
+20594   0.0  2022-12-19 06:11:59  Chiller_4               VGD_output
+20595   0.0  2022-12-19 07:11:59  Chiller_4               VGD_output
+20596   0.0  2022-12-19 08:11:59  Chiller_4               VGD_output
+20597   0.0  2022-12-19 09:11:59  Chiller_4               VGD_output
+
+[20024 rows x 4 columns]
+2025-01-31 13:05:52 - DEBUG - data frame number of rows 20598
+2025-01-31 13:05:52 - DEBUG - ship data  writtten to influxdb Encore_FC
+2025-01-31 13:05:52 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Venezia_AC.gz.txt ship name Venezia_AC
+2025-01-31 13:05:52 - DEBUG - merged files
+2025-01-31 13:05:52 - DEBUG - mod_dataframe
+2025-01-31 13:05:52 - DEBUG -           Value            Timestamp    Chiller                   Sensor
+1      50.06668  2025-01-16 05:14:48  Chiller_2  Thrust_bearing_position
+2      50.03678  2025-01-16 05:14:49  Chiller_2  Thrust_bearing_position
+3      50.05921  2025-01-16 05:15:52  Chiller_2  Thrust_bearing_position
+4      50.03678  2025-01-16 05:15:53  Chiller_2  Thrust_bearing_position
+5      50.05921  2025-01-16 05:16:41  Chiller_2  Thrust_bearing_position
+...         ...                  ...        ...                      ...
+25425     27.82  2025-01-16 06:38:22  Chiller_3    Temp_water_inlet_cond
+25427       0.0  2025-01-16 05:38:22  Chiller_3       Trafo_winding_temp
+25428       0.0  2025-01-16 06:38:22  Chiller_3       Trafo_winding_temp
+25430       0.0  2025-01-16 05:38:22  Chiller_3      Unit_control_signal
+25431       0.0  2025-01-16 06:38:22  Chiller_3      Unit_control_signal
+
+[25012 rows x 4 columns]
+2025-01-31 13:05:52 - DEBUG - data frame number of rows 25432
+2025-01-31 13:05:53 - DEBUG - ship data  writtten to influxdb Venezia_AC
+2025-01-31 13:05:53 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine Norrkoping_Radiance.gz.txt ship name Radiance
+2025-01-31 13:05:53 - DEBUG - merged files
+2025-01-31 13:05:53 - DEBUG - mod_dataframe
+2025-01-31 13:05:53 - DEBUG -       Value            Timestamp   Chiller Sensor
+1     605.0  2025-01-17 02:19:02  Calculus    120
+2     611.0  2025-01-17 02:21:02  Calculus    120
+3     592.0  2025-01-17 02:23:02  Calculus    120
+4     591.0  2025-01-17 02:25:02  Calculus    120
+5     596.0  2025-01-17 02:27:02  Calculus    120
+...     ...                  ...       ...    ...
+9170    2.0  2025-01-17 03:10:14  Sequence    120
+9171    2.0  2025-01-17 03:12:14  Sequence    120
+9172    2.0  2025-01-17 03:14:14  Sequence    120
+9173    2.0  2025-01-17 03:16:14  Sequence    120
+9174    2.0  2025-01-17 03:18:14  Sequence    120
+
+[8873 rows x 4 columns]
+2025-01-31 13:05:53 - DEBUG - data frame number of rows 9175
+2025-01-31 13:05:53 - DEBUG - ship data  writtten to influxdb Radiance
+2025-01-31 13:05:53 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Nrk_Spectrum_1.gz.txt ship name Spectrum_1
+2025-01-31 13:05:53 - DEBUG - merged files
+2025-01-31 13:05:53 - DEBUG - mod_dataframe
+2025-01-31 13:05:53 - DEBUG -        Value            Timestamp Chiller Sensor
+1       20.9  2025-01-16 05:12:42       C    300
+2      17.58  2025-01-16 05:18:18       C    300
+3      17.75  2025-01-16 05:23:20       C    300
+4      21.25  2025-01-16 05:28:57       C    300
+5      20.34  2025-01-16 05:34:22       C    300
+...      ...                  ...     ...    ...
+25648   15.0  2025-01-16 08:21:16      62    600
+25649   15.0  2025-01-16 08:31:16      62    600
+25650   15.0  2025-01-16 08:41:17      62    600
+25651   15.0  2025-01-16 08:58:27      62    600
+25652   15.0  2025-01-16 09:11:16      62    600
+
+[25371 rows x 4 columns]
+2025-01-31 13:05:53 - DEBUG - data frame number of rows 25653
+2025-01-31 13:05:54 - DEBUG - ship data  writtten to influxdb Spectrum_1
+2025-01-31 13:05:54 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_FC.gz.txt ship name Joy_FC
+2025-01-31 13:05:54 - DEBUG - merged files
+2025-01-31 13:05:54 - DEBUG - mod_dataframe
+2025-01-31 13:05:54 - DEBUG -        Value            Timestamp    Chiller               Sensor
+1       4.87  2025-01-16 05:15:01   Sequence    COP_chiller_1_ele
+2       5.29  2025-01-16 05:17:29   Sequence    COP_chiller_1_ele
+3       4.89  2025-01-16 05:17:37   Sequence    COP_chiller_1_ele
+4       4.95  2025-01-16 05:21:42   Sequence    COP_chiller_1_ele
+5       4.54  2025-01-16 05:28:30   Sequence    COP_chiller_1_ele
+...      ...                  ...        ...                  ...
+15128    0.0  2025-01-16 09:21:43  Chiller_3   Trafo_winding_temp
+15130   30.0  2025-01-16 08:21:42  Chiller_3  Unit_control_signal
+15131   30.0  2025-01-16 09:21:43  Chiller_3  Unit_control_signal
+15133  100.0  2025-01-16 08:21:42  Chiller_3           VGD_output
+15134  100.0  2025-01-16 09:21:43  Chiller_3           VGD_output
+
+[14629 rows x 4 columns]
+2025-01-31 13:05:54 - DEBUG - data frame number of rows 15135
+2025-01-31 13:05:54 - DEBUG - ship data  writtten to influxdb Joy_FC
+2025-01-31 13:05:54 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Trend_Marine_Norrkoping_Bliss.gz.txt ship name Bliss
+2025-01-31 13:05:54 - DEBUG - merged files
+2025-01-31 13:05:54 - DEBUG - mod_dataframe
+2025-01-31 13:05:54 - DEBUG -       Value            Timestamp    Chiller                   Sensor
+1       0.0  2022-12-18 10:11:57  Chiller_3  Alarm_limit_stall_count
+2       0.0  2022-12-18 11:11:57  Chiller_3  Alarm_limit_stall_count
+3       0.0  2022-12-18 12:11:57  Chiller_3  Alarm_limit_stall_count
+4       0.0  2022-12-18 13:11:57  Chiller_3  Alarm_limit_stall_count
+5       0.0  2022-12-18 14:11:57  Chiller_3  Alarm_limit_stall_count
+...     ...                  ...        ...                      ...
+20593   0.0  2022-12-19 05:11:59  Chiller_4               VGD_output
+20594   0.0  2022-12-19 06:11:59  Chiller_4               VGD_output
+20595   0.0  2022-12-19 07:11:59  Chiller_4               VGD_output
+20596   0.0  2022-12-19 08:11:59  Chiller_4               VGD_output
+20597   0.0  2022-12-19 09:11:59  Chiller_4               VGD_output
+
+[20024 rows x 4 columns]
+2025-01-31 13:05:54 - DEBUG - data frame number of rows 20598
+2025-01-31 13:05:55 - DEBUG - ship data  writtten to influxdb Bliss
+2025-01-31 13:05:55 - DEBUG - filename /home/peter/Documents/Radar2.0/trend_files/TREND Marine_Norrkoping_Joy_AC.gz.txt ship name Joy_AC
+2025-01-31 13:05:55 - DEBUG - merged files
+2025-01-31 13:05:55 - DEBUG - mod_dataframe
+2025-01-31 13:05:55 - DEBUG -          Value            Timestamp    Chiller          Sensor
+1       5781.0  2025-01-16 03:55:44   Sequence  Q2kW_chiller_1
+2       5992.0  2025-01-16 04:02:50   Sequence  Q2kW_chiller_1
+3       5781.0  2025-01-16 04:08:28   Sequence  Q2kW_chiller_1
+4       5767.0  2025-01-16 04:23:43   Sequence  Q2kW_chiller_1
+5       5555.0  2025-01-16 05:19:52   Sequence  Q2kW_chiller_1
+...        ...                  ...        ...             ...
+8764  70.20001  2025-01-16 08:50:31  Chiller_1      VGD_output
+8765      67.5  2025-01-16 08:50:50  Chiller_1      VGD_output
+8766  69.70001  2025-01-16 09:01:20  Chiller_1      VGD_output
+8767      67.5  2025-01-16 09:01:30  Chiller_1      VGD_output
+8768      65.1  2025-01-16 09:01:33  Chiller_1      VGD_output
+
+[8343 rows x 4 columns]
+2025-01-31 13:05:55 - DEBUG - data frame number of rows 8769
+2025-01-31 13:05:55 - DEBUG - ship data  writtten to influxdb Joy_AC
+2025-01-31 13:05:55 - INFO - move of file time. 0 seconds
+2025-01-31 13:05:55 - INFO - merge to pandas dataframe of input file time. 6 seconds
+2025-01-31 13:05:55 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:05:55 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:05:55 - INFO - script total execution time. 6 second
+2025-01-31 13:05:55 - INFO - DB write time. 0 second
+2025-01-31 13:05:55 - INFO - Sleeping for 30 minutes...
+2025-01-31 13:09:42 - INFO - 2025-01-31 13:09:42.069773
+2025-01-31 13:09:42 - INFO - Beginning processing!
+2025-01-31 13:09:42 - DEBUG - script delay time: 31
+2025-01-31 13:09:42 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:09:42 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:09:42 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:09:42 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:09:42 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:12:17 - INFO - 2025-01-31 13:12:17.654383
+2025-01-31 13:12:17 - INFO - Beginning processing!
+2025-01-31 13:12:17 - DEBUG - script delay time: 31
+2025-01-31 13:12:17 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:12:17 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:12:17 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:12:17 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:12:17 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:12:28 - INFO - 2025-01-31 13:12:28.203592
+2025-01-31 13:12:28 - INFO - Beginning processing!
+2025-01-31 13:12:28 - DEBUG - script delay time: 30
+2025-01-31 13:12:28 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:12:28 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:12:28 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:12:28 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:12:28 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:16:33 - INFO - 2025-01-31 13:16:33.204903
+2025-01-31 13:16:33 - INFO - Beginning processing!
+2025-01-31 13:16:33 - DEBUG - script delay time: 30
+2025-01-31 13:16:33 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:16:33 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:16:33 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:16:33 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:16:33 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:16:33 - INFO - move of file time. 0 seconds
+2025-01-31 13:16:33 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-31 13:16:33 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:16:33 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:16:33 - INFO - script total execution time. 0 second
+2025-01-31 13:16:33 - INFO - DB write time. 0 second
+2025-01-31 13:16:33 - INFO - Sleeping for 30 minutes...
+2025-01-31 13:16:54 - INFO - 2025-01-31 13:16:54.228464
+2025-01-31 13:16:54 - INFO - Beginning processing!
+2025-01-31 13:16:54 - DEBUG - script delay time: 31
+2025-01-31 13:16:54 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:16:54 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:16:54 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:16:54 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:16:54 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:16:54 - INFO - move of file time. 0 seconds
+2025-01-31 13:16:54 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-31 13:16:54 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:16:54 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:16:54 - INFO - script total execution time. 0 second
+2025-01-31 13:16:54 - INFO - DB write time. 0 second
+2025-01-31 13:16:54 - INFO - Sleeping for 30 minutes...
+2025-01-31 13:18:34 - INFO - 2025-01-31 13:18:34.111648
+2025-01-31 13:18:34 - INFO - Beginning processing!
+2025-01-31 13:18:34 - DEBUG - script delay time: 31
+2025-01-31 13:18:34 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:18:34 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:18:34 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:18:34 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:18:34 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:18:34 - INFO - move of file time. 0 seconds
+2025-01-31 13:18:34 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-31 13:18:34 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:18:34 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:18:34 - INFO - script total execution time. 0 second
+2025-01-31 13:18:34 - INFO - DB write time. 0 second
+2025-01-31 13:18:34 - INFO - Sleeping for 30 minutes...
+2025-01-31 13:19:40 - INFO - 2025-01-31 13:19:40.552112
+2025-01-31 13:19:40 - INFO - Beginning processing!
+2025-01-31 13:19:40 - DEBUG - script delay time: 31
+2025-01-31 13:19:40 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:19:40 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:19:40 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:19:40 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:19:40 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:19:40 - INFO - move of file time. 0 seconds
+2025-01-31 13:19:40 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-31 13:19:40 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:19:40 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:19:40 - INFO - script total execution time. 0 second
+2025-01-31 13:19:40 - INFO - DB write time. 0 second
+2025-01-31 13:19:40 - INFO - Sleeping for 31
+2025-01-31 13:20:11 - INFO - Beginning processing!
+2025-01-31 13:20:11 - DEBUG - script delay time: 31
+2025-01-31 13:20:11 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:20:11 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:20:11 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:20:11 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:20:11 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:20:11 - INFO - move of file time. 0 seconds
+2025-01-31 13:20:11 - INFO - merge to pandas dataframe of input file time. -31 seconds
+2025-01-31 13:20:11 - DEBUG - search and add chillers column of dataframe time. 31 seconds
+2025-01-31 13:20:11 - DEBUG - search and add sensort type column of dataframe time. 31 seconds
+2025-01-31 13:20:11 - INFO - script total execution time. 0 second
+2025-01-31 13:20:11 - INFO - DB write time. 0 second
+2025-01-31 13:20:11 - INFO - Sleeping for 31
+2025-01-31 13:20:42 - INFO - Beginning processing!
+2025-01-31 13:20:42 - DEBUG - script delay time: 31
+2025-01-31 13:20:42 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:20:42 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:20:42 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:20:42 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:20:42 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:20:42 - INFO - move of file time. 0 seconds
+2025-01-31 13:20:42 - INFO - merge to pandas dataframe of input file time. -62 seconds
+2025-01-31 13:20:42 - DEBUG - search and add chillers column of dataframe time. 62 seconds
+2025-01-31 13:20:42 - DEBUG - search and add sensort type column of dataframe time. 62 seconds
+2025-01-31 13:20:42 - INFO - script total execution time. 0 second
+2025-01-31 13:20:42 - INFO - DB write time. 0 second
+2025-01-31 13:20:42 - INFO - Sleeping for 31
+2025-01-31 13:21:53 - INFO - 2025-01-31 13:21:53.051902
+2025-01-31 13:21:53 - INFO - Beginning processing!
+2025-01-31 13:21:53 - DEBUG - script delay time: 1800
+2025-01-31 13:21:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:21:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:21:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:21:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:21:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:21:53 - INFO - move of file time. 0 seconds
+2025-01-31 13:21:53 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-01-31 13:21:53 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-01-31 13:21:53 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-01-31 13:21:53 - INFO - script total execution time. 0 second
+2025-01-31 13:21:53 - INFO - DB write time. 0 second
+2025-01-31 13:21:53 - INFO - Sleeping for 1800 seconds
