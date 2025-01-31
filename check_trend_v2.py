@@ -29,7 +29,7 @@ file_handler.setLevel(logging.DEBUG)
 
 # Create a console handler (use stdout to prevent it from using stderr)
 console_handler = logging.StreamHandler(sys.stdout)  # Ensure logging goes to stdout
-console_handler.setLevel(logging.WARNING)  # Show only INFO and above on console
+console_handler.setLevel(logging.INFO)  # Show only INFO and above on console
 
 # Create a formatter
 formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S")
@@ -57,6 +57,7 @@ write_api = client.write_api(write_options=SYNCHRONOUS)
 
 starttime = datetime.now()
 logger.info(starttime)
+search_string = "LOCAL."  # search string to catch the lines
 
 parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
 parser.add_argument('--f', default='/home/peter/Documents/Radar2.0/trend.txt', help='Input file')
@@ -270,55 +271,61 @@ def write_influx(dframe, bucket_name, measure_name):
         logger.error(f"Failed to write data to InfluxDB: {e}")
         raise RuntimeError(f"Failed to write data to InfluxDB: {e}")
         
-
-#  Start of the main program
-file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
-
-
-for file, shipname in zip(trend_filenames, trend_shipnames):
-    logger.debug('filename '+ file + ' ship name '+ shipname )
-    #  Convert the trend file to Pandas dataframe
-    # search_string = "Codesys"  # search string to catch the lines
-    search_string = "LOCAL."  # search string to catch the lines
-    mod_dataframe=create_panda(glob.glob(file))
-    logger.debug('mod_dataframe' )
-    logger.debug(mod_dataframe )
-    #  write dataframe with shipnameto influxdb
-    logger.debug('data frame number of rows %s' % recordrows)
-    write_influx(mod_dataframe,bucket,shipname)
-    logger.debug('ship data  writtten to influxdb %s' % shipname)
+def main():
+    while True:
+        starttime = datetime.now()
+        #  Start of the main program
+        file_check_time, trend_filenames, trend_shipnames = check_trendfiles()
 
 
-
-scriptend=datetime.now()
+        for file, shipname in zip(trend_filenames, trend_shipnames):
+            logger.debug('filename '+ file + ' ship name '+ shipname )
+            #  Convert the trend file to Pandas dataframe
+            # search_string = "Codesys"  # search string to catch the lines
+            
+            mod_dataframe=create_panda(glob.glob(file))
+            logger.debug('mod_dataframe' )
+            logger.debug(mod_dataframe )
+            #  write dataframe with shipnameto influxdb
+            logger.debug('data frame number of rows %s' % recordrows)
+            write_influx(mod_dataframe,bucket,shipname)
+            logger.debug('ship data  writtten to influxdb %s' % shipname)
 
 
 
-
-scriptchiller=datetime.now()
-movetime=file_check_time-starttime
-mergedtime=mergedfiles-file_check_time
-chillertime=scriptchiller-mergedfiles
-sensortime=scriptend-mergedfiles
-totalscripttime=scriptend-starttime
-
-movet=int(round(movetime.total_seconds()))
-merget=int(round(mergedtime.total_seconds()))
-chillert=int(round(chillertime.total_seconds()))
-sensort=int(round(sensortime.total_seconds()))
-exect=int(round(totalscripttime.total_seconds()))
+        scriptend=datetime.now()
 
 
 
-logger.info('move of file time. %s seconds' % movet)
-logger.info('merge to pandas dataframe of input file time. %s seconds' % merget)
-logger.debug('search and add chillers column of dataframe time. %s seconds' % chillert)
-logger.debug('search and add sensort type column of dataframe time. %s seconds' % sensort)
-logger.info('script total execution time. %s second' % exect)
 
-db_write_end=datetime.now()
-totalwritetime=db_write_end-scriptend
+        scriptchiller=datetime.now()
+        movetime=file_check_time-starttime
+        mergedtime=mergedfiles-file_check_time
+        chillertime=scriptchiller-mergedfiles
+        sensortime=scriptend-mergedfiles
+        totalscripttime=scriptend-starttime
 
-db_writetime=int(round(totalwritetime.total_seconds()))
-logger.info('DB write time. %s second' % db_writetime)
+        movet=int(round(movetime.total_seconds()))
+        merget=int(round(mergedtime.total_seconds()))
+        chillert=int(round(chillertime.total_seconds()))
+        sensort=int(round(sensortime.total_seconds()))
+        exect=int(round(totalscripttime.total_seconds()))
 
+
+
+        logger.info('move of file time. %s seconds' % movet)
+        logger.info('merge to pandas dataframe of input file time. %s seconds' % merget)
+        logger.debug('search and add chillers column of dataframe time. %s seconds' % chillert)
+        logger.debug('search and add sensort type column of dataframe time. %s seconds' % sensort)
+        logger.info('script total execution time. %s second' % exect)
+
+        db_write_end=datetime.now()
+        totalwritetime=db_write_end-scriptend
+
+        db_writetime=int(round(totalwritetime.total_seconds()))
+        logger.info('DB write time. %s second' % db_writetime)
+          
+        logger.info("Sleeping for 30 minutes...")
+        time.sleep(1800)  # Sleep for 30 minutes
+if __name__ == "__main__":
+    main()
