@@ -2140,3 +2140,87 @@
 2025-01-31 13:21:53 - INFO - script total execution time. 0 second
 2025-01-31 13:21:53 - INFO - DB write time. 0 second
 2025-01-31 13:21:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 13:51:53 - INFO - Beginning processing!
+2025-01-31 13:51:53 - DEBUG - script delay time: 1800
+2025-01-31 13:51:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 13:51:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 13:51:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 13:51:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 13:51:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 13:51:53 - INFO - move of file time. 0 seconds
+2025-01-31 13:51:53 - INFO - merge to pandas dataframe of input file time. -1800 seconds
+2025-01-31 13:51:53 - DEBUG - search and add chillers column of dataframe time. 1800 seconds
+2025-01-31 13:51:53 - DEBUG - search and add sensort type column of dataframe time. 1800 seconds
+2025-01-31 13:51:53 - INFO - script total execution time. 0 second
+2025-01-31 13:51:53 - INFO - DB write time. 0 second
+2025-01-31 13:51:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 14:21:53 - INFO - Beginning processing!
+2025-01-31 14:21:53 - DEBUG - script delay time: 1800
+2025-01-31 14:21:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 14:21:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 14:21:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 14:21:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 14:21:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 14:21:53 - INFO - move of file time. 0 seconds
+2025-01-31 14:21:53 - INFO - merge to pandas dataframe of input file time. -3600 seconds
+2025-01-31 14:21:53 - DEBUG - search and add chillers column of dataframe time. 3600 seconds
+2025-01-31 14:21:53 - DEBUG - search and add sensort type column of dataframe time. 3600 seconds
+2025-01-31 14:21:53 - INFO - script total execution time. 0 second
+2025-01-31 14:21:53 - INFO - DB write time. 0 second
+2025-01-31 14:21:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 14:51:53 - INFO - Beginning processing!
+2025-01-31 14:51:53 - DEBUG - script delay time: 1800
+2025-01-31 14:51:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 14:51:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 14:51:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 14:51:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 14:51:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 14:51:53 - INFO - move of file time. 0 seconds
+2025-01-31 14:51:53 - INFO - merge to pandas dataframe of input file time. -5400 seconds
+2025-01-31 14:51:53 - DEBUG - search and add chillers column of dataframe time. 5400 seconds
+2025-01-31 14:51:53 - DEBUG - search and add sensort type column of dataframe time. 5400 seconds
+2025-01-31 14:51:53 - INFO - script total execution time. 0 second
+2025-01-31 14:51:53 - INFO - DB write time. 0 second
+2025-01-31 14:51:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 15:21:53 - INFO - Beginning processing!
+2025-01-31 15:21:53 - DEBUG - script delay time: 1800
+2025-01-31 15:21:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 15:21:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 15:21:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 15:21:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 15:21:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 15:21:53 - INFO - move of file time. 0 seconds
+2025-01-31 15:21:53 - INFO - merge to pandas dataframe of input file time. -7200 seconds
+2025-01-31 15:21:53 - DEBUG - search and add chillers column of dataframe time. 7200 seconds
+2025-01-31 15:21:53 - DEBUG - search and add sensort type column of dataframe time. 7200 seconds
+2025-01-31 15:21:53 - INFO - script total execution time. 0 second
+2025-01-31 15:21:53 - INFO - DB write time. 0 second
+2025-01-31 15:21:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 15:51:53 - INFO - Beginning processing!
+2025-01-31 15:51:53 - DEBUG - script delay time: 1800
+2025-01-31 15:51:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 15:51:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 15:51:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 15:51:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 15:51:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 15:51:53 - INFO - move of file time. 0 seconds
+2025-01-31 15:51:53 - INFO - merge to pandas dataframe of input file time. -9000 seconds
+2025-01-31 15:51:53 - DEBUG - search and add chillers column of dataframe time. 9000 seconds
+2025-01-31 15:51:53 - DEBUG - search and add sensort type column of dataframe time. 9000 seconds
+2025-01-31 15:51:53 - INFO - script total execution time. 0 second
+2025-01-31 15:51:53 - INFO - DB write time. 0 second
+2025-01-31 15:51:53 - INFO - Sleeping for 1800 seconds
+2025-01-31 16:21:53 - INFO - Beginning processing!
+2025-01-31 16:21:53 - DEBUG - script delay time: 1800
+2025-01-31 16:21:53 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-01-31 16:21:53 - DEBUG - Trend directory: /home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025
+2025-01-31 16:21:53 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-01-31 16:21:53 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-01-31 16:21:53 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radara2.0/OneDrive_1_1-31-2025'
+2025-01-31 16:21:53 - INFO - move of file time. 0 seconds
+2025-01-31 16:21:53 - INFO - merge to pandas dataframe of input file time. -10800 seconds
+2025-01-31 16:21:53 - DEBUG - search and add chillers column of dataframe time. 10800 seconds
+2025-01-31 16:21:53 - DEBUG - search and add sensort type column of dataframe time. 10800 seconds
+2025-01-31 16:21:53 - INFO - script total execution time. 0 second
+2025-01-31 16:21:53 - INFO - DB write time. 0 second
+2025-01-31 16:21:53 - INFO - Sleeping for 1800 seconds

@@ -1,0 +1,2 @@
+docker run --name check_trend_container -it --rm checktrend
+docker run --name check_trend_container -itd -v /home/peter/Documents/docker_files/check_trend:/app --rm checktrend
