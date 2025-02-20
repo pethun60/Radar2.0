@@ -2224,3 +2224,148 @@
 2025-01-31 16:21:53 - INFO - script total execution time. 0 second
 2025-01-31 16:21:53 - INFO - DB write time. 0 second
 2025-01-31 16:21:53 - INFO - Sleeping for 1800 seconds
+2025-02-20 08:29:40 - INFO - 2025-02-20 08:29:40.038401
+2025-02-20 08:29:40 - INFO - Beginning processing!
+2025-02-20 08:29:40 - DEBUG - script delay time: 30
+2025-02-20 08:29:40 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:29:40 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:29:40 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:29:40 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:29:40 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:29:40 - INFO - move of file time. 0 seconds
+2025-02-20 08:29:40 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-02-20 08:29:40 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-02-20 08:29:40 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-02-20 08:29:40 - INFO - script total execution time. 0 second
+2025-02-20 08:29:40 - INFO - DB write time. 0 second
+2025-02-20 08:30:56 - INFO - 2025-02-20 08:30:56.328447
+2025-02-20 08:31:07 - INFO - 2025-02-20 08:31:07.770053
+2025-02-20 08:31:07 - INFO - Beginning processing!
+2025-02-20 08:31:07 - DEBUG - script delay time: 30
+2025-02-20 08:31:07 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:31:07 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:31:07 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:31:07 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:31:07 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:31:07 - INFO - move of file time. 0 seconds
+2025-02-20 08:31:07 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-02-20 08:31:07 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-02-20 08:31:07 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-02-20 08:31:07 - INFO - script total execution time. 0 second
+2025-02-20 08:31:07 - INFO - DB write time. 0 second
+2025-02-20 08:31:07 - INFO - Sleeping for 30 seconds
+2025-02-20 08:31:37 - INFO - Beginning processing!
+2025-02-20 08:31:37 - DEBUG - script delay time: 30
+2025-02-20 08:31:37 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:31:37 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:31:37 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:31:37 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:31:37 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:31:37 - INFO - move of file time. 0 seconds
+2025-02-20 08:31:37 - INFO - merge to pandas dataframe of input file time. -30 seconds
+2025-02-20 08:31:37 - DEBUG - search and add chillers column of dataframe time. 30 seconds
+2025-02-20 08:31:37 - DEBUG - search and add sensort type column of dataframe time. 30 seconds
+2025-02-20 08:31:37 - INFO - script total execution time. 0 second
+2025-02-20 08:31:37 - INFO - DB write time. 0 second
+2025-02-20 08:31:37 - INFO - Sleeping for 30 seconds
+2025-02-20 08:32:07 - INFO - Beginning processing!
+2025-02-20 08:32:07 - DEBUG - script delay time: 30
+2025-02-20 08:32:07 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:32:07 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:32:07 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:32:07 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:32:07 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:32:07 - INFO - move of file time. 0 seconds
+2025-02-20 08:32:07 - INFO - merge to pandas dataframe of input file time. -60 seconds
+2025-02-20 08:32:07 - DEBUG - search and add chillers column of dataframe time. 60 seconds
+2025-02-20 08:32:07 - DEBUG - search and add sensort type column of dataframe time. 60 seconds
+2025-02-20 08:32:07 - INFO - script total execution time. 0 second
+2025-02-20 08:32:07 - INFO - DB write time. 0 second
+2025-02-20 08:32:07 - INFO - Sleeping for 30 seconds
+2025-02-20 08:32:37 - INFO - Beginning processing!
+2025-02-20 08:32:37 - DEBUG - script delay time: 30
+2025-02-20 08:32:37 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:32:37 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:32:37 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:32:37 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:32:37 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:32:37 - INFO - move of file time. 0 seconds
+2025-02-20 08:32:37 - INFO - merge to pandas dataframe of input file time. -90 seconds
+2025-02-20 08:32:37 - DEBUG - search and add chillers column of dataframe time. 90 seconds
+2025-02-20 08:32:37 - DEBUG - search and add sensort type column of dataframe time. 90 seconds
+2025-02-20 08:32:37 - INFO - script total execution time. 0 second
+2025-02-20 08:32:37 - INFO - DB write time. 0 second
+2025-02-20 08:32:37 - INFO - Sleeping for 30 seconds
+2025-02-20 08:33:07 - INFO - Beginning processing!
+2025-02-20 08:33:07 - DEBUG - script delay time: 30
+2025-02-20 08:33:07 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:33:07 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:33:07 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:33:07 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:33:07 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:33:07 - INFO - move of file time. 0 seconds
+2025-02-20 08:33:07 - INFO - merge to pandas dataframe of input file time. -120 seconds
+2025-02-20 08:33:07 - DEBUG - search and add chillers column of dataframe time. 120 seconds
+2025-02-20 08:33:07 - DEBUG - search and add sensort type column of dataframe time. 120 seconds
+2025-02-20 08:33:07 - INFO - script total execution time. 0 second
+2025-02-20 08:33:07 - INFO - DB write time. 0 second
+2025-02-20 08:33:07 - INFO - Sleeping for 30 seconds
+2025-02-20 08:33:37 - INFO - Beginning processing!
+2025-02-20 08:33:37 - DEBUG - script delay time: 30
+2025-02-20 08:33:37 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:33:37 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:33:37 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:33:37 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:33:37 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:33:37 - INFO - move of file time. 0 seconds
+2025-02-20 08:33:37 - INFO - merge to pandas dataframe of input file time. -150 seconds
+2025-02-20 08:33:37 - DEBUG - search and add chillers column of dataframe time. 150 seconds
+2025-02-20 08:33:37 - DEBUG - search and add sensort type column of dataframe time. 150 seconds
+2025-02-20 08:33:37 - INFO - script total execution time. 0 second
+2025-02-20 08:33:37 - INFO - DB write time. 0 second
+2025-02-20 08:33:37 - INFO - Sleeping for 30 seconds
+2025-02-20 08:34:07 - INFO - Beginning processing!
+2025-02-20 08:34:07 - DEBUG - script delay time: 30
+2025-02-20 08:34:07 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 08:34:07 - DEBUG - Trend directory: /home/peter/Documents/Radar2.0/Trend_files_zip
+2025-02-20 08:34:07 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 08:34:07 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 08:34:07 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/Trend_files_zip'
+2025-02-20 08:34:07 - INFO - move of file time. 0 seconds
+2025-02-20 08:34:07 - INFO - merge to pandas dataframe of input file time. -180 seconds
+2025-02-20 08:34:07 - DEBUG - search and add chillers column of dataframe time. 180 seconds
+2025-02-20 08:34:07 - DEBUG - search and add sensort type column of dataframe time. 180 seconds
+2025-02-20 08:34:07 - INFO - script total execution time. 0 second
+2025-02-20 08:34:07 - INFO - DB write time. 0 second
+2025-02-20 08:34:07 - INFO - Sleeping for 30 seconds
+2025-02-20 13:47:10 - INFO - 2025-02-20 13:47:10.222007
+2025-02-20 13:47:10 - INFO - Beginning processing!
+2025-02-20 13:47:10 - DEBUG - script delay time: 30
+2025-02-20 13:47:10 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 13:47:10 - DEBUG - Trend directory: /home/peter/radar2.0/Radar2.0
+2025-02-20 13:47:10 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 13:47:10 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 13:47:10 - DEBUG - Number of files in '/home/peter/radar2.0/Radar2.0': 9
+2025-02-20 13:47:10 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/check_trend.log'
+2025-02-20 13:47:10 - INFO - move of file time. 0 seconds
+2025-02-20 13:47:10 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-02-20 13:47:10 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-02-20 13:47:10 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-02-20 13:47:10 - INFO - script total execution time. 0 second
+2025-02-20 13:47:10 - INFO - DB write time. 0 second
+2025-02-20 13:47:43 - INFO - 2025-02-20 13:47:43.613642
+2025-02-20 13:47:43 - INFO - Beginning processing!
+2025-02-20 13:47:43 - DEBUG - script delay time: 60
+2025-02-20 13:47:43 - DEBUG - Output file: /home/peter/Documents/Radar2.0/trend_files/trend_output.txt
+2025-02-20 13:47:43 - DEBUG - Trend directory: /home/peter/radar2.0/Radar2.0
+2025-02-20 13:47:43 - DEBUG - Working directory: /home/peter/Documents/Radar2.0/trend_files
+2025-02-20 13:47:43 - DEBUG - Warning: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/trend_output.txt'
+2025-02-20 13:47:43 - DEBUG - Number of files in '/home/peter/radar2.0/Radar2.0': 9
+2025-02-20 13:47:43 - DEBUG - Error: [Errno 2] No such file or directory: '/home/peter/Documents/Radar2.0/trend_files/check_trend.log'
+2025-02-20 13:47:43 - INFO - move of file time. 0 seconds
+2025-02-20 13:47:43 - INFO - merge to pandas dataframe of input file time. 0 seconds
+2025-02-20 13:47:43 - DEBUG - search and add chillers column of dataframe time. 0 seconds
+2025-02-20 13:47:43 - DEBUG - search and add sensort type column of dataframe time. 0 seconds
+2025-02-20 13:47:43 - INFO - script total execution time. 0 second
+2025-02-20 13:47:43 - INFO - DB write time. 0 second
+2025-02-20 13:47:43 - INFO - Sleeping for 60 seconds

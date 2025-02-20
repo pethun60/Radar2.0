@@ -12,9 +12,17 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 import gzip
 import logging
 import sys
+from pathlib import Path
 
 global org
 
+
+# Ensure the "logging" directory exists
+log_dir = "logging"
+os.makedirs(log_dir, exist_ok=True)
+
+# Define the full path for the log file
+log_file = os.path.join(log_dir, "check_trend.log")
 
 # Create a logger
 logger = logging.getLogger("MyLogger")
@@ -24,7 +32,7 @@ logger.setLevel(logging.DEBUG)  # Capture DEBUG and above messages
 logging.getLogger().handlers = []
 
 # Create a file handler to log DEBUG and above
-file_handler = logging.FileHandler("/home/peter/Documents/Radar2.0/check_trend.log")
+file_handler = logging.FileHandler(log_file)
 file_handler.setLevel(logging.DEBUG)
 
 # Create a console handler (use stdout to prevent it from using stderr)
@@ -40,10 +48,14 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+# Example log messages
+logger.debug("Debug message: logging is set up.")
+logger.info("Info message: logging is set up.")
+
 
 token = "1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g=="
 org = "jci"
-url = "http://192.168.1.203:8086"
+url = "http://thunholm.homelinus.com:8086"
 bucket = "radarbucket"
 
 client = InfluxDBClient(url=url, token=token, org=org)
@@ -63,7 +75,8 @@ search_string = "LOCAL."  # search string to catch the lines
 parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
 parser.add_argument('--t', default=30, help='script delaytime')
 parser.add_argument('--o', default='/home/peter/Documents/Radar2.0/trend_files/trend_output.txt', help='Output file')
-parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
+#parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
+parser.add_argument('--d', default=str(Path.cwd()), help='Trend file directory')
 parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
 parser.add_argument('--v', action='store_true', help='Display version')
 parser.add_argument('--c', default='Influx', help='Connection name')
@@ -123,7 +136,7 @@ def check_trendfiles():
 
 
     except OSError as e:
-        logger.debug(f"Error: {e}")
+        logger.debug(f"Error copying files: {e}")
 
     # Record the time when files were moved
     filemoved = datetime.now()
