@@ -24,7 +24,7 @@ logger.setLevel(logging.DEBUG)  # Capture DEBUG and above messages
 logging.getLogger().handlers = []
 
 # Create a file handler to log DEBUG and above
-file_handler = logging.FileHandler("/home/peter/Documents/Radar2.0/check_trend.log")
+file_handler = logging.FileHandler("check_trend.log")
 file_handler.setLevel(logging.DEBUG)
 
 # Create a console handler (use stdout to prevent it from using stderr)
