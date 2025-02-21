@@ -55,7 +55,7 @@ logger.info("Info message: logging is set up.")
 
 token = "1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g=="
 org = "jci"
-url = "http://thunholm.homelinus.com:8086"
+url = "http://thunholm.homelinux.com:8086"
 bucket = "radarbucket"
 
 client = InfluxDBClient(url=url, token=token, org=org)
