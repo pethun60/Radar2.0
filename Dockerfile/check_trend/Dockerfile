@@ -22,4 +22,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 # Use $(pwd) inside CMD to dynamically set the working directory
 # CMD ["python", "check_trend_v2.py", "--t", "1800", "--d", "$(pwd)", "--w", "trend_files"]
-CMD ["python", "check_trend_v2.py", "--t", "1800",  "--w", "trend_files"]
+CMD ["python", "check_trend_v2.py", "--t", "1800",  "--w", "trend_files", "--url", "influxdb_cont:8086" ]

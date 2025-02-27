@@ -66,7 +66,7 @@ parser.add_argument('--d', default=str(Path.cwd()), help='Trend file directory')
 parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
 parser.add_argument('--v', action='store_true', help='Display version')
 parser.add_argument('--c', default='Influx', help='Connection name')
-parser.add_argument('--token', default='1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g==', help='Token string')
+parser.add_argument('--token', default='8swycDQhZlMSdCNkXdKwTJkFHBQ_pqkn7Yl8W74Yf7agEIci-ot1mdtnM1-F_qjSi57PJnRRy9dJUiPgboglFg==', help='Token string')
 parser.add_argument('--bucket', default='radarbucket', help='Bucket name')
 parser.add_argument('--url', default='thunholm.homelinux.com:8086', help='Influxdb url and port')
 parser.add_argument('--org', default='jci', help='Organisation name')
@@ -91,6 +91,10 @@ starttime = datetime.now()
 mergedfiles = datetime.now()
 logger.info(starttime)
 search_string = "LOCAL."  # search string to catch the lines
+logger.debug(f"influxdb bucket : {args.bucket}")
+logger.debug(f"influxdb organisation: {args.org}")
+logger.debug(f"influxdb url: {args.url}")
+logger.debug(f"influxdb token: {args.token}")
 
 
 def check_trendfiles():

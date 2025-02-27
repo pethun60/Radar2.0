@@ -53,10 +53,30 @@ logger.debug("Debug message: logging is set up.")
 logger.info("Info message: logging is set up.")
 
 
-token = "1_EX68vrFJOHvCu_Qu3r5s668UUcZKdwWhdsnleLa7EeDkGNwhzOWg_27LiYN8_jhbxZnF7ckoXLJItTF_h97g=="
-org = "jci"
-url = "http://thunholm.homelinux.com:8086"
-bucket = "radarbucket"
+starttime = datetime.now()
+mergedfiles = datetime.now()
+logger.info(starttime)
+search_string = "LOCAL."  # search string to catch the lines
+
+parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
+parser.add_argument('--t', default=30, help='script delaytime')
+parser.add_argument('--o', default='/home/peter/Documents/Radar2.0/trend_files/trend_output.txt', help='Output file')
+#parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
+parser.add_argument('--d', default=str(Path.cwd()), help='Trend file directory')
+parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
+parser.add_argument('--v', action='store_true', help='Display version')
+parser.add_argument('--c', default='Influx', help='Connection name')
+parser.add_argument('--token', default='8swycDQhZlMSdCNkXdKwTJkFHBQ_pqkn7Yl8W74Yf7agEIci-ot1mdtnM1-F_qjSi57PJnRRy9dJUiPgboglFg==', help='Token string')
+parser.add_argument('--bucket', default='radarbucket', help='Bucket name')
+parser.add_argument('--url', default='thunholm.homelinux.com:8086', help='Influxdb url and port')
+parser.add_argument('--org', default='jci', help='Organisation name')
+args = parser.parse_args()
+
+
+token = args.token
+org = args.org
+url = args.url
+bucket = args.bucket
 
 client = InfluxDBClient(url=url, token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
@@ -71,16 +91,11 @@ starttime = datetime.now()
 mergedfiles = datetime.now()
 logger.info(starttime)
 search_string = "LOCAL."  # search string to catch the lines
+logger.debug(f"influxdb bucket : {args.bucket}")
+logger.debug(f"influxdb organisation: {args.org}")
+logger.debug(f"influxdb url: {args.url}")
+logger.debug(f"influxdb token: {args.token}")
 
-parser = argparse.ArgumentParser(description='Convert and Compress Codesys csv datalog')
-parser.add_argument('--t', default=30, help='script delaytime')
-parser.add_argument('--o', default='/home/peter/Documents/Radar2.0/trend_files/trend_output.txt', help='Output file')
-#parser.add_argument('--d', default='/home/peter/Documents/Radar2.0/Trend_files_zip', help='Trend file directory')
-parser.add_argument('--d', default=str(Path.cwd()), help='Trend file directory')
-parser.add_argument('--w', default='/home/peter/Documents/Radar2.0/trend_files', help='trendfile working directory')                    
-parser.add_argument('--v', action='store_true', help='Display version')
-parser.add_argument('--c', default='Influx', help='Connection name')
-args = parser.parse_args()
 
 def check_trendfiles():
     logger.info("Beginning processing!")
@@ -88,6 +103,7 @@ def check_trendfiles():
     logger.debug(f"Output file: {args.o}")
     logger.debug(f"Trend directory: {args.d}")
     logger.debug(f"Working directory: {args.w}")
+
 
     src_dir = args.d
     dest_dir = args.w
