@@ -230,7 +230,9 @@ def get_sensor_type(row):
     global last_valid_value2  # Keep track of the last valid value
     if search_string in row['Value']:
         # Use regex to extract the value between the first set of pipe characters
-        match = re.search(r'\|([^|]+)\|', row['Value'])
+        # match = re.search(r'\|([^|]+)\|', row['Value'])
+        match = re.search(r'\.([^.|]+)(?=\|)|\|([^|]+)\|', row['Value'])
+
         if match:
             last_valid_value2 = match.group(1)  # Extract matched value
             # logger.debug(f"Extracted Sensor: {last_valid_value2}")
