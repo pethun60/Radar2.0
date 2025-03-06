@@ -2,7 +2,7 @@ import argparse
 import pandas
 import os
 import shutil
-from datetime import datetime
+from datetime import datetime, timedelta
 import glob
 import numpy as np
 import re 
@@ -36,7 +36,7 @@ file_handler = logging.FileHandler(log_file)
 file_handler.setLevel(logging.DEBUG)
 
 # Create a console handler (use stdout to prevent it from using stderr)
-console_handler = logging.StreamHandler(sys.stdout)  # Ensure logging goes to stdout
+console_handler = logging.S treamHandler(sys.stdout)  # Ensure logging goes to stdout
 console_handler.setLevel(logging.INFO)  # Show only INFO and above on console
 
 # Create a formatter
